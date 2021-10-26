@@ -10,7 +10,15 @@
     <meta property="og:url" content="" />
     <meta property="og:image" content="" />
     <title>La Fabri'K des Gourmandises</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./ressources/logos/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./ressources/logos/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./ressources/logos/favicon-16x16.png">
+    <link rel="manifest" href="./ressources/logos/site.webmanifest">
+    <link rel="mask-icon" href="./ressources/logos/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="./styles/style.css" />
+    
   </head>
   <body>
     <!-- Loader -->
@@ -20,120 +28,214 @@
 
     <header>
       <div class="titre-principal">
-        <img
-          src="./ressources/logos/fork-and-knife-with-plate.png"
-          alt="logo"
-        />
-        <h1>La Fabri'K des Gourmandises</h1>
-        <img src="./ressources/logos/mini-cupcake.png" alt="logo" />
+        <div class="nav-head">
+
+          <div class="titre-logos">
+            <img
+            src="./ressources/logos/fork-and-knife-with-plate.png"
+            alt="logo"
+            class="image-traiteur"
+          />
+          <h1>La Fabri'K des Gourmandises</h1>
+          <img
+            src="./ressources/logos/mini-cupcake.png"
+            alt="logo"
+            class="image-patisserie"
+          />
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#traiteur">Traiteur</a></li>
+            <li><a href="#patisserie">Pâtisseries</a></li>
+            <li><a href="./pages/galerie_photos.html">Galerie Photos</a></li>
+            <li><a href="#contact">Contacts</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul class="titres-navbar">
-          <li><a href="#">Traiteur</a></li>
-          <li><a href="#">Pâtisseries</a></li>
-          <li><a href="#">Galerie Photos</a></li>
-          <li><a href="#">Contacts</a></li>
-        </ul>
-      </nav>
+      </div>
     </header>
     <main>
       <div class="container-global">
         <!-- Section Traiteur -->
         <section class="traiteur" id="traiteur">
           <h2>Traiteur</h2>
-          <p class="txt-traiteur">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit unde
-            laboriosam, perferendis maiores totam id fuga tempora eligendi, eum
-            iure fugiat odit hic obcaecati necessitatibus quibusdam cum aperiam
-            provident placeat consectetur! Sint dolorum, vero nobis ullam unde
-            ducimus officiis fuga!
-          </p>
-          <div class="img-traiteur">
-            <img src="" alt="image de plat" />
-            <img src="" alt="image de plat" />
-            <img src="" alt="image de plat" />
+          <div class="items-traiteur">
+            <p class="txt-traiteur">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Veritatis eaque eveniet totam? Ducimus libero cupiditate pariatur
+              culpa, accusantium molestias dolor tenetur voluptatem quasi
+              incidunt! Explicabo nulla tenetur, soluta provident quod possimus,
+              eligendi nam reprehenderit quidem facere odio quo qui. Dolor
+              commodi, sit repudiandae minima quis delectus, quasi illo amet
+              consequuntur aliquam nihil doloribus, quae atque sapiente sequi
+              nemo eum ipsum aspernatur optio neque expedita quod porro sunt!
+              Praesentium hic quod esse vel ipsum corporis, possimus animi
+              soluta vitae a dolores laudantium iure ipsa neque, iusto nam!
+            </p>
+            <div class="slideshow">
+              <div class="slideshow-item">
+                <img src="./ressources/images/pizza.jpg" alt="image de plat" />
+              </div>
+
+              <div class="slideshow-item">
+                <img
+                  src="./ressources/images/tortilla.jpg"
+                  alt="image de plat"
+                />
+              </div>
+
+              <div class="slideshow-item">
+                <img src="./ressources/images/poulet.jpg" alt="image de plat" />
+              </div>
+            </div>
           </div>
+
           <div class="parallax-traiteur">
-            <p class="txt-par"></p>
-            <p class="txt-par"></p>
-            <p class="txt-par"></p>
+            <p class="txt-par1">Plats à emporter</p>
+            <p class="txt-par1">Cuisine Traditionnelle</p>
+            <p class="txt-par1">Paiement sur Place</p>
           </div>
         </section>
         <!-- Section Pâtisseries -->
         <section class="patisserie" id="patisserie">
           <h2>Pâtisseries</h2>
-          <div class="img-traiteur">
-            <img src="" alt="image de gateau" />
-            <img src="" alt="image de gateau" />
-            <img src="" alt="image de gateau" />
+          <div class="items-patisserie">
+            <div class="slideshow">
+              <div class="slideshow-item">
+                <img
+                  src="./ressources/images/cupcake.jpg"
+                  alt="image de gateau"
+                />
+              </div>
+              <div class="slideshow-item">
+                <img
+                  src="./ressources/images/fraisier.jpg"
+                  alt="image de gateau"
+                />
+              </div>
+              <div class="slideshow-item">
+                <img
+                  src="./ressources/images/cake-surprise.jpg"
+                  alt="image de gateau"
+                />
+              </div>
+            </div>
+            <p class="txt-patisserie">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat
+              earum modi dolorum, adipisci similique ipsa fugit dolores
+              architecto quibusdam quam quidem maxime corporis tempora numquam!
+              Voluptatibus qui officiis rem dignissimos, nemo atque quasi
+              provident, doloremque cumque inventore quis sit. Nulla, molestias
+              expedita ab illum explicabo, quae dolorem, quos totam autem vero
+              aliquam nemo veritatis? Dolores voluptatem eius dolorum quae
+              fugiat laborum vel fuga quasi enim quis, placeat aliquam libero
+              labore assumenda ipsa laboriosam amet. Libero voluptates,
+              exercitationem accusamus temporibus cupiditate animi tempore
+              ducimus ullam qui illum natus, eligendi, illo doloremque odit unde
+            </p>
           </div>
-          <p class="txt-patisserie">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit unde
-            laboriosam, perferendis maiores totam id fuga tempora eligendi, eum
-            iure fugiat odit hic obcaecati necessitatibus quibusdam cum aperiam
-            provident placeat consectetur! Sint dolorum, vero nobis ullam unde
-            ducimus officiis fuga!
-          </p>
-
           <div class="parallax-patisserie">
-            <p class="txt-par"></p>
-            <p class="txt-par"></p>
-            <p class="txt-par"></p>
+            <p class="txt-par2">Pâtisseries à emporter</p>
+            <p class="txt-par2">The Number cake Le spécilité</p>
+            <p class="txt-par2">Commandes et réservations sur Facebook</p>
           </div>
         </section>
         <!-- Section Adresse & Map-->
         <section class="localisation">
-          <h3>Adresse</h3>
-          <img src="" alt="image-plat" />
-          <img src="" alt="image-gateau" />
-          <p>9 Impasse du Petit Pailler 44310 St Philbert de Grand Lieu</p>
-
-          <div id="map"></div>
+          <div class="adresse">
+            <img
+              class="logo-adress"
+              src="./ressources/logos/pot-of-food.png"
+              alt="image-plat"
+            />
+            <h3>Adresse</h3>
+            <img
+              class="logo-adress"
+              src="./ressources/logos/shortcake.png"
+              alt="image-gateau"
+            />
+          </div>
+          <div class="local">
+            <p>9 Impasse du petit Pailler</p>
+            <p>44310 St Philbert de Grand Lieu</p>
+          </div>
         </section>
+        <div id="map"></div>
       </div>
     </main>
-    <footer>
+    <!-- Section About -->
+    <section id="contact">
       <div class="about">
-        <h4>À Propos</h4>
-        <img src="" alt="logo" />
+          <a class="link-about" href="#a_propos">À Propos</a>
+          <img class="logo" src="./ressources/logos/logo1.png" alt="logo" />
         <div class="reseaux">
           <h4>Réseaux</h4>
           <ul>
             <li>
-              <a href="#whatsapp">
-                <img src="" alt="logo" />
+              <a   href="https://api.whatsapp.com/send?phone= +33 6 59 29 97 71"
+              target="_blank"
+              rel="noopener noreferrer">
+                <img
+                  class="logo-reseaux"
+                  src="./ressources/logos/whatsapp.png"
+                  alt="logo whatsapp"
+                />
               </a>
             </li>
             <li>
               <a href="#facebook">
-                <img src="" alt="logo" />
+                <img
+                  class="logo-reseaux"
+                  src="./ressources/logos/facebook.png"
+                  alt="logo facebook"
+                />
               </a>
             </li>
             <li>
               <a href="#instagram">
-                <img src="" alt="logo" />
+                <img
+                  class="logo-reseaux"
+                  src="./ressources/logos/instagram.png"
+                  alt="logo instagram"
+                />
               </a>
             </li>
             <li>
               <a href="#mail">
-                <img src="" alt="logo" />
+                <img
+                  class="logo-reseaux"
+                  src="./ressources/logos/email.png"
+                  alt="logo mail"
+                />
               </a>
             </li>
           </ul>
         </div>
-        <p>
-          &copy; Depuis Tout Droits réservés
-          <a
-            class="link-cgu"
-            href="cgu.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Mentions légales</a
-          >
-        </p>
-      </div>
+      </section>
+    </div>
+    <footer>
+      <p>
+        &copy; Depuis Tout Droits réservés
+        <a
+          class="link-cgu"
+          href="cgu.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Mentions légales</a
+        >
+      </p>
     </footer>
 
+     <!-- Scroll UP -->
+     <a href="#" class="scrollup" id="scroll-up">
+     <img src="./ressources/logos/arrow-up.png" alt="arrow up">
+    </a>
+
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiEUcQZrZaIJ7OJT1L_WjRpk8aPOhNKXY&callback=initMap"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>

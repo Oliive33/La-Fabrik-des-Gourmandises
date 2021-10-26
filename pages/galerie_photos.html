@@ -14,55 +14,122 @@
       crossorigin="anonymous"
     ></script>
     <title>Galerie Photos-La Fabri'K des Gourmandises</title>
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../ressources/logos/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../ressources/logos/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../ressources/logos/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../ressources/logos/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="../ressources/logos/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="../styles/style.css" />
   </head>
   <body>
-    <header>
-      <a href="index.html">
-        <i class="fas fa-arrow-left"></i>
-      </a>
-      <img src="" alt="arrow" />
-      <h1>Galerie Photos</h1>
-      <nav>
-        <img src="" alt="logo traiteur" />
-        <ul class="liste-items">
-          <li class="items">
-            <a href="#">Traiteur</a>
-            <ul class="sous-liste">
-              <li class="items-sous-liste">lorem</li>
-              <li class="items-sous-liste">lorem</li>
-              <li class="items-sous-liste">lorem</li>
-              <li class="items-sous-liste">lorem</li>
-            </ul>
-          </li>
-        </ul>
-        <img src="" alt="logo pâtisserie" />
-        <ul class="liste-items">
-          <li class="items">
-            <a href="#">Pâtisseries</a>
-            <ul class="sous-liste">
-              <li class="items-sous-liste">lorem</li>
-              <li class="items-sous-liste">lorem</li>
-              <li class="items-sous-liste">lorem</li>
-              <li class="items-sous-liste">lorem</li>
-            </ul>
-          </li>
-        </ul>
+    <header class="top">
+      <div class="header-top">
+        <a href="../index.html">
+          <img
+            class="arrow-left"
+            src="../ressources/logos/arrow.png"
+            alt="arrow"
+          />
+        </a>
+        <h1 class="title-galerie">Galerie Photos</h1>
+      </div>
+      <nav class="dropdown">
+        <div class="titles-galerie-secondary">
+          <ul class="liste-items">
+            <li class="items">
+              <img
+                src="../ressources/logos/fork-and-knife.png"
+                alt="logo traiteur"
+              />
+              Traiteur
+              <ul class="sous-liste">
+                <li class="items-sous-liste">Blaquette de veau</li>
+                <li class="items-sous-liste">Salade Veggie</li>
+                <li class="items-sous-liste">Poulet aux Herbes</li>
+                <li class="items-sous-liste">Quiche Maison</li>
+              </ul>
+            </li>
+
+            <li class="items">
+              Pâtisseries
+              <img src="../ressources/logos/cake.png" alt="logo pâtisserie" />
+              <ul class="sous-liste">
+                <li class="items-sous-liste">Number Cake</li>
+                <li class="items-sous-liste">Wedding Cake</li>
+                <li class="items-sous-liste">Cake Anniversaire</li>
+                <li class="items-sous-liste">Cake Trompe l'oeil</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
       <div class="container">
-        <div class="images-traiteur">
-          <img src="" alt="images traiteur" />
-          <img src="" alt="images traiteur" />
-          <img src="" alt="images traiteur" />
-          <img src="" alt="images traiteur" />
+        <div class="grille-traiteur">
+          <div class="grid-item">
+            <img src="../ressources/images/food1.jpg" alt="images traiteur" />
+          </div>
+          <div class="grid-item">
+            <img src="../ressources/images/food2.jpg" alt="images traiteur" />
+          </div>
+          <div class="grid-item">
+            <img src="../ressources/images/foo3.jpg" alt="images traiteur" />
+          </div>
         </div>
-        <div class="images-patisserie">
-          <img src="" alt="images patisserie" />
-          <img src="" alt="images patisserie" />
-          <img src="" alt="images patisserie" />
-          <img src="" alt="images patisserie" />
+        <div class="grille-patisserie">
+          <div class="grid-item">
+            <img src="../ressources/images/cake1.jpg" alt="images patisserie" />
+          </div>
+          <div class="grid-item">
+            <img src="../ressources/images/cake2.jpg" alt="images patisserie" />
+          </div>
+          <div class="grid-item">
+            <img src="../ressources/images/cake3.jpg" alt="images patisserie" />
+          </div>
+        </div>
+        <!-- slider -->
+
+        <div class="slider-portfolio">
+          <button class="btn-fermer-slider" type="button">X</button>
+
+          <img
+            class="img-visible-slider"
+            src="../ressources/images/food1.jpg"
+          />
+
+          <button class="btn-left" type="button">
+            <img
+              src="../ressources/logos/chevron-gauche.svg"
+              alt="chevron gauche"
+            />
+          </button>
+          <button class="btn-right" type="button">
+            <img
+              src="../ressources/logos/chevron-droit.svg"
+              alt="chevron droit"
+            />
+          </button>
         </div>
 
         <div class="txt-photos">
@@ -124,5 +191,7 @@
         </p>
       </div>
     </footer>
+
+    <script src="../js/page.js"></script>
   </body>
 </html>

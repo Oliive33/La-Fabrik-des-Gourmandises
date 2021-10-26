@@ -7,54 +7,309 @@
 }
 html {
   scroll-behavior: smooth;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 body {
   font-family: $font-text;
-  background: url(../../ressources/images/background-body.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100%;
+  // background: linear-gradient(52deg, #d6d4d4 0%, #bebfbe 80%);
+  // background: linear-gradient(90deg, #7e6c4b 0%, #796851 80%);
+  background: linear-gradient(47deg, #c4c4c4 0%, #c9bcbc 80%);
+  // background: url(../../ressources/images/background1.png);
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // height: 100vh;
 }
 /* --------------------header-------------------- */
+
 .titre-principal {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  background: #e4c8ac;
-  box-shadow: 0px 6px 12px -3px rgba(0, 0, 0, 0.75);
+  background: $background-primary;
+  background-position: bottom;
+  border: 5px solid $color-primary;
+
+  .titre-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0 35px 0px;
+  }
 
   h1 {
     font-family: $font-title;
-    font-size: 60px;
+    font-size: 65px;
+    border-radius: 5px;
     letter-spacing: 2px;
     text-align: center;
     padding: 5px;
-    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(90deg, #464646 0%, #5a5a5a 80%);
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
+    @include color-titles;
   }
   img {
     width: 50px;
     height: 50px;
-    padding: 3px;
   }
 }
-.titres-navbar {
+.nav-links {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  list-style-type: none;
+  margin-bottom: 15px;
+  font-size: 25px;
 
-  li a {
+  a {
     text-decoration: none;
-    color: #333;
+    @include color-titles;
+    font-weight: 500;
+  }
+  a:hover {
+    background: linear-gradient(45deg, #797878 0%, #8f8f8f 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+    font-weight: bold;
+  }
+  li {
+    transition: all 0.2s ease;
+  }
+
+  li:hover {
+    transform: translateX(5px);
+  }
+}
+/* --------------------Section Traiteur-------------------- */
+.container-global {
+  padding: 50px 5px 0 5px;
+}
+.traiteur {
+  margin: 50px 0px 100px 0px;
+
+  h2 {
+    font-family: $font-title;
+    @include titles-secondary;
+  }
+}
+.items-traiteur {
+  @include items;
+
+  .txt-traiteur {
+    @include txt-items;
+    margin-left: 70px;
+  }
+}
+.slideshow {
+  width: 100%;
+  // height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.slideshow-item {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  opacity: 0;
+  animation: cycleImages 31s infinite;
+}
+
+.slideshow-item img {
+  width: 500px;
+  height: 275px;
+  object-fit: cover;
+  animation: zoom 31s infinite;
+  border-radius: 5px;
+}
+.slideshow-item:nth-child(1),
+.slideshow-item:nth-child(1) img {
+  animation-delay: 0s;
+}
+.slideshow-item:nth-child(2),
+.slideshow-item:nth-child(2) img {
+  animation-delay: 10s;
+}
+.slideshow-item:nth-child(3),
+.slideshow-item:nth-child(3) img {
+  animation-delay: 20s;
+}
+
+@keyframes cycleImages {
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+@keyframes zoom {
+  100% {
+    transform: scale(1.3);
+  }
+}
+/* --------------------Sections Parallax traiteur et patisserie-------------------- */
+.parallax-traiteur {
+  background: url(../../ressources/images/parallax1.jpg) no-repeat right / cover
+    fixed;
+  @include parallax;
+}
+.txt-par1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0 50px;
+}
+.parallax-patisserie {
+  background: url(../../ressources/images/parallax2.jpg) no-repeat right / cover
+    fixed;
+  @include parallax;
+}
+.txt-par2 {
+  font-size: 29px;
+  font-weight: bolder;
+  margin: 0 40px;
+  text-align: center;
+  color: #000000;
+}
+/* --------------------Section Pâtisserie-------------------- */
+.patisserie {
+  margin: 90px 0px 90px 0px;
+
+  h2 {
+    font-family: $font-title;
+    @include titles-secondary;
   }
 }
 
+.items-patisserie {
+  @include items;
+
+  .txt-patisserie {
+    @include txt-items;
+    margin-right: 70px;
+  }
+}
+/* --------------------Section Adresse & Map-------------------- */
+.localisation {
+  margin: 100px auto 0;
+  padding: 10px 5px 40px 5px;
+  // background: linear-gradient(90deg, #a39e9e 0%, #bdc4bd 80%);
+  // background: #ccb59c;
+  @include backgrounds;
+  width: 50%;
+  border-radius: 5px;
+  box-shadow: 6px 3px 10px 3px rgba(81, 81, 81, 0.75);
+
+  h3 {
+    font-family: "Italianno", cursive;
+    font-weight: 600;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  .adresse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    margin: 0 auto;
+    font-size: 50px;
+    text-align: center;
+    // background: $background-primary;
+    line-height: 1.6;
+  }
+  .logo-adress {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+  }
+  .local {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+}
+#map {
+  height: 350px;
+  width: 50%;
+  margin: 50px auto;
+}
 h2 {
-  font-family: $font-title;
+  font-family: "Italianno", cursive;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+.txt-window {
+  font-family: "Italianno", cursive;
+  display: flex;
+  justify-content: center;
   font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 22px;
+}
+.post-code {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+// img {
+//   height: 200px;
+// }
+/* --------------------Footer page1-------------------- */
+.about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: $color-primary;
+  margin-top: 100px;
+  width: 100%;
+
+  .link-about {
+    font-size: 22px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 35px;
+    background: $color-secondary;
+    border-radius: 3px;
+    border: 2px solid #77644f;
+    color: #333;
+    transition: all 0.2s ease-in-out;
+  }
+  .link-about:hover {
+    color: #000;
+    font-weight: 500;
+    transform: scale(1.1);
+    background: #7c6a56;
+  }
+
+  h4 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .logo {
+    width: 150px;
+    height: 150px;
+    // position: relative;
+    // left: 60px;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+  }
+  li {
+    margin: 10px;
+    list-style-type: none;
+  }
+  .logo-reseaux {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+  }
+  .logo-reseaux:hover {
+    transform: scale(1.2);
+  }
+}
+footer {
+  border-top: 1px dashed #333;
+  background: $color-primary;
+  padding: 30px 20px;
+  text-align: center;
 }

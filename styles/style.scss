@@ -5,31 +5,28 @@
 }
 @font-face {
   font-family: "Poppins";
-  src: url("../ressources/fonts/Poppins/Poppins-Thin.ttf") format("truetype");
-  src: url("../ressources/fonts/Poppins/Poppins-ThinItalic.ttf")
-    format("truetype");
-  src: url("../ressources/fonts/Poppins/Poppins-Light.ttf") format("truetype");
-  src: url("../ressources/fonts/Poppins/Poppins-LightItalic.ttf")
-    format("truetype");
+  src: url("../ressources/fonts/Poppins/Poppins-Regular.ttf");
+  // src: url("../ressources/fonts/Poppins/Poppins-Thin.ttf") format("truetype");
+  // src: url("../ressources/fonts/Poppins/Poppins-ThinItalic.ttf")
+  //   format("truetype");
+  // src: url("../ressources/fonts/Poppins/Poppins-Light.ttf") format("truetype");
+  // src: url("../ressources/fonts/Poppins/Poppins-LightItalic.ttf")
+  //   format("truetype");
   src: url("../ressources/fonts/Poppins/Poppins-Medium.ttf") format("truetype");
-  src: url("../ressources/fonts/Poppins/Poppins-MediumItalic.ttf")
-    format("truetype");
-  src: url("../ressources/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
-  src: url("../ressources/fonts/Poppins/Poppins-SemiBold.ttf")
-    format("truetype");
-  src: url("../ressources/fonts/Poppins/Poppins-SemiBoldItalic.ttf")
-    format("truetype");
-  src: url("../ressources/fonts/Poppins/Poppins-SemiBoldItalic.ttf")
-    format("truetype");
-  src: url("../ressources/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
-  src: url("../ressources/fonts/Poppins/Poppins-BoldItalic.ttf")
-    format("truetype");
-  src: url("../ressources/fonts/Poppins/Poppins-Black.ttf") format("truetype");
-  src: url("../ressources/fonts/Poppins/Poppins-BlackItalic.ttf")
-    format("truetype");
+  // src: url("../ressources/fonts/Poppins/Poppins-MediumItalic.ttf")
+  //   format("truetype");
+  // src: url("../ressources/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  // src: url("../ressources/fonts/Poppins/Poppins-SemiBold.ttf")
+  //   format("truetype");
+  // src: url("../ressources/fonts/Poppins/Poppins-SemiBoldItalic.ttf")
+  //   format("truetype");
+  // src: url("../ressources/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+  // src: url("../ressources/fonts/Poppins/Poppins-BoldItalic.ttf")
+  //   format("truetype");
 }
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./layout/index";
+@import "./layout/scroll";
 @import "./layout/galerie_photos";
 @import "./layout/a_propos";

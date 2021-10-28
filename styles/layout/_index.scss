@@ -19,8 +19,9 @@ body {
 
 .titre-principal {
   background: $background-primary;
-  background-position: bottom;
+  background-position: center;
   border: 5px solid $color-primary;
+  text-shadow: $shadow-text;
 
   .titre-logos {
     display: flex;
@@ -100,7 +101,7 @@ body {
   width: inherit;
   height: inherit;
   position: absolute;
-  // opacity: 0;
+  opacity: 0;
   animation: cycleImages 31s infinite;
 }
 
@@ -110,6 +111,7 @@ body {
   object-fit: cover;
   animation: zoom 31s infinite;
   border-radius: 5px;
+  opacity: 0.8;
 }
 .slideshow-item:nth-child(1),
 .slideshow-item:nth-child(1) img {
@@ -124,41 +126,46 @@ body {
   animation-delay: 20s;
 }
 
-// @keyframes cycleImages {
-//   25% {
-//     opacity: 1;
-//   }
-//   40% {
-//     opacity: 0;
-//   }
-// }
-// @keyframes zoom {
-//   100% {
-//     transform: scale(1.3);
-//   }
-// }
+@keyframes cycleImages {
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+@keyframes zoom {
+  100% {
+    transform: scale(1.3);
+  }
+}
 /* --------------------Sections Parallax traiteur et patisserie-------------------- */
 .parallax-traiteur {
   background: url(../../ressources/images/parallax1.jpg) no-repeat right / cover
     fixed;
   @include parallax;
+  opacity: 0.6;
 }
 .txt-par1 {
-  font-size: 30px;
+  font-size: 25px;
+  text-shadow: $shadow-text;
   font-weight: bold;
-  margin: 0 50px;
+  margin: 0 80px;
+  text-align: center;
 }
 .parallax-patisserie {
-  background: url(../../ressources/images/parallax2.jpg) no-repeat right / cover
+  background: url(../../ressources/images/parallax.jpg) no-repeat top / cover
     fixed;
+  opacity: 0.6;
   @include parallax;
 }
 .txt-par2 {
-  font-size: 29px;
+  font-size: 25px;
   font-weight: bolder;
   margin: 0 40px;
   text-align: center;
   color: #000000;
+  text-shadow: $shadow-text;
 }
 /* --------------------Section Pâtisserie-------------------- */
 .patisserie {
@@ -182,8 +189,6 @@ body {
 .localisation {
   margin: 100px auto 0;
   padding: 10px 5px 40px 5px;
-  // background: linear-gradient(90deg, #a39e9e 0%, #bdc4bd 80%);
-  // background: #ccb59c;
   @include backgrounds;
   width: 50%;
   border-radius: 5px;
@@ -216,6 +221,7 @@ body {
     font-size: 20px;
     text-align: center;
     letter-spacing: 2px;
+    text-shadow: $shadow-text;
   }
 }
 #map {

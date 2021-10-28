@@ -21,7 +21,7 @@ allPicsPortfolio.forEach((item) => {
   });
 });
 rightPorfolio.addEventListener("click", () => {
-  if (indexEnCours === 11) {
+  if (indexEnCours === 5) {
     indexEnCours = 0;
     srcEnCoursSlider.src = allPicsPortfolio[indexEnCours].src;
     photoEnCours = allPicsPortfolio[indexEnCours];

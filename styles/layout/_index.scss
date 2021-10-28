@@ -12,14 +12,8 @@ html {
 }
 body {
   font-family: $font-text;
-  // background: linear-gradient(52deg, #d6d4d4 0%, #bebfbe 80%);
-  // background: linear-gradient(90deg, #7e6c4b 0%, #796851 80%);
-  background: linear-gradient(47deg, #c4c4c4 0%, #c9bcbc 80%);
-  // background: url(../../ressources/images/background1.png);
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // height: 100vh;
+  // @include background-body;
+  background-color: rgb(139, 50, 50);
 }
 /* --------------------header-------------------- */
 
@@ -99,7 +93,6 @@ body {
 }
 .slideshow {
   width: 100%;
-  // height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -107,7 +100,7 @@ body {
   width: inherit;
   height: inherit;
   position: absolute;
-  opacity: 0;
+  // opacity: 0;
   animation: cycleImages 31s infinite;
 }
 
@@ -131,19 +124,19 @@ body {
   animation-delay: 20s;
 }
 
-@keyframes cycleImages {
-  25% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 0;
-  }
-}
-@keyframes zoom {
-  100% {
-    transform: scale(1.3);
-  }
-}
+// @keyframes cycleImages {
+//   25% {
+//     opacity: 1;
+//   }
+//   40% {
+//     opacity: 0;
+//   }
+// }
+// @keyframes zoom {
+//   100% {
+//     transform: scale(1.3);
+//   }
+// }
 /* --------------------Sections Parallax traiteur et patisserie-------------------- */
 .parallax-traiteur {
   background: url(../../ressources/images/parallax1.jpg) no-repeat right / cover
@@ -211,7 +204,6 @@ body {
     margin: 0 auto;
     font-size: 50px;
     text-align: center;
-    // background: $background-primary;
     line-height: 1.6;
   }
   .logo-adress {
@@ -287,8 +279,6 @@ h2 {
   .logo {
     width: 150px;
     height: 150px;
-    // position: relative;
-    // left: 60px;
   }
   ul {
     display: flex;
@@ -299,9 +289,7 @@ h2 {
     list-style-type: none;
   }
   .logo-reseaux {
-    width: 40px;
-    height: 40px;
-    transition: transform 0.3s ease-in-out;
+    @include contact;
   }
   .logo-reseaux:hover {
     transform: scale(1.2);

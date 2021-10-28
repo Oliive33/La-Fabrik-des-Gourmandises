@@ -1,0 +1,58 @@
+/* --------------------Footer galerie photos-------------------- */
+.adress {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: $color-primary;
+  margin-top: 100px;
+  width: 100%;
+
+  .adresse-logo {
+    text-align: center;
+    padding: 10px 5px;
+    background: $color-secondary;
+    border-radius: 3px;
+    line-height: 1.8;
+    border: 2px solid #77644f;
+    color: #333;
+    transition: all 0.2s ease-in-out;
+  }
+  .adresse-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+  .title-contact {
+    font-size: 22px;
+  }
+
+  .logo-adresse {
+    width: 30px;
+    height: 30px;
+  }
+  .logo {
+    width: 150px;
+    height: 150px;
+  }
+  .title-reseaux {
+    font-size: 22px;
+    text-align: center;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+  }
+  li {
+    margin: 10px;
+    list-style-type: none;
+  }
+
+  .logo-reseaux {
+    @include contact;
+  }
+  .logo-reseaux:hover {
+    transform: scale(1.2);
+  }
+}

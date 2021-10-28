@@ -19,6 +19,80 @@
   box-shadow: 6px 3px 10px 3px rgba(81, 81, 81, 0.75);
   border: 7px solid $color-primary;
 }
+@mixin background-body {
+  background-image: radial-gradient(
+      circle at 10% 59%,
+      rgba(255, 255, 255, 0.04) 0%,
+      rgba(255, 255, 255, 0.04) 8%,
+      transparent 8%,
+      transparent 92%
+    ),
+    radial-gradient(
+      circle at 29% 72%,
+      rgba(255, 255, 255, 0.04) 0%,
+      rgba(255, 255, 255, 0.04) 8%,
+      transparent 8%,
+      transparent 92%
+    ),
+    radial-gradient(
+      circle at 12% 19%,
+      rgba(255, 255, 255, 0.03) 0%,
+      rgba(255, 255, 255, 0.03) 6%,
+      transparent 6%,
+      transparent 94%
+    ),
+    radial-gradient(
+      circle at 37% 87%,
+      rgba(255, 255, 255, 0.03) 0%,
+      rgba(255, 255, 255, 0.03) 6%,
+      transparent 6%,
+      transparent 94%
+    ),
+    radial-gradient(
+      circle at 31% 56%,
+      rgba(255, 255, 255, 0.03) 0%,
+      rgba(255, 255, 255, 0.03) 6%,
+      transparent 6%,
+      transparent 94%
+    ),
+    radial-gradient(
+      circle at 38% 73%,
+      rgba(255, 255, 255, 0.03) 0%,
+      rgba(255, 255, 255, 0.03) 6%,
+      transparent 6%,
+      transparent 94%
+    ),
+    radial-gradient(
+      circle at 37% 56%,
+      rgba(255, 255, 255, 0.04) 0%,
+      rgba(255, 255, 255, 0.04) 4%,
+      transparent 4%,
+      transparent 96%
+    ),
+    radial-gradient(
+      circle at 2% 59%,
+      rgba(255, 255, 255, 0.04) 0%,
+      rgba(255, 255, 255, 0.04) 4%,
+      transparent 4%,
+      transparent 96%
+    ),
+    radial-gradient(
+      circle at 9% 66%,
+      rgba(255, 255, 255, 0.04) 0%,
+      rgba(255, 255, 255, 0.04) 4%,
+      transparent 4%,
+      transparent 96%
+    ),
+    radial-gradient(
+      circle at 38% 80%,
+      rgba(255, 255, 255, 0.04) 0%,
+      rgba(255, 255, 255, 0.04) 4%,
+      transparent 4%,
+      transparent 96%
+    ),
+    linear-gradient(90deg, rgb(148, 148, 148), rgb(223, 223, 223));
+}
+
 @mixin backgrounds {
   background: url(../../ressources/images/background1.png) no-repeat bottom /
     cover fixed;
@@ -53,4 +127,18 @@
   opacity: 0.9;
   border-top: 1px dashed #333;
   border-bottom: 1px dashed #333;
+}
+@mixin contact {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease-in-out;
+}
+//Titles
+@mixin title-pages {
+  font-size: 65px;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 5px;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 }

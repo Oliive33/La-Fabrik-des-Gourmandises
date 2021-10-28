@@ -53,34 +53,20 @@
         </a>
         <h1 class="title-galerie">Galerie Photos</h1>
       </div>
-      <nav class="dropdown">
+      <nav>
         <div class="titles-galerie-secondary">
-          <ul class="liste-items">
-            <li class="items">
-              <img
-                src="../ressources/logos/fork-and-knife.png"
-                alt="logo traiteur"
-              />
-              Traiteur
-              <ul class="sous-liste">
-                <li class="items-sous-liste">Blaquette de veau</li>
-                <li class="items-sous-liste">Salade Veggie</li>
-                <li class="items-sous-liste">Poulet aux Herbes</li>
-                <li class="items-sous-liste">Quiche Maison</li>
-              </ul>
-            </li>
-
-            <li class="items">
-              Pâtisseries
-              <img src="../ressources/logos/cake.png" alt="logo pâtisserie" />
-              <ul class="sous-liste">
-                <li class="items-sous-liste">Number Cake</li>
-                <li class="items-sous-liste">Wedding Cake</li>
-                <li class="items-sous-liste">Cake Anniversaire</li>
-                <li class="items-sous-liste">Cake Trompe l'oeil</li>
-              </ul>
-            </li>
-          </ul>
+          <img
+            class="logo-galerie"
+            src="../ressources/logos/fork-and-knife.png"
+            alt="logo traiteur"
+          />
+          <a class="titles-galerie1" href="#Traiteur"> Traiteur </a>
+          <a class="titles-galerie2" href="#Traiteur"> Pâtisseries </a>
+          <img
+            class="logo-galerie"
+            src="../ressources/logos/cake.png"
+            alt="logo patisserie"
+          />
         </div>
       </nav>
     </header>
@@ -88,24 +74,82 @@
       <div class="container">
         <div class="grille-traiteur">
           <div class="grid-item">
-            <img src="../ressources/images/food1.jpg" alt="images traiteur" />
+            <div class="text">Burger Maison</div>
+            <div class="overlay">
+              <img
+                class="img-galerie"
+                src="../ressources/images/food1.jpg"
+                alt="images traiteur"
+              />
+            </div>
           </div>
           <div class="grid-item">
-            <img src="../ressources/images/food2.jpg" alt="images traiteur" />
+            <div class="text">Salade Veggie</div>
+            <div class="overlay">
+              <img src="../ressources/images/food2.jpg" alt="images traiteur" />
+            </div>
           </div>
           <div class="grid-item">
-            <img src="../ressources/images/foo3.jpg" alt="images traiteur" />
+            <div class="text">Poulet aux herbes</div>
+            <div class="overlay">
+              <img src="../ressources/images/foo3.jpg" alt="images traiteur" />
+            </div>
           </div>
         </div>
         <div class="grille-patisserie">
           <div class="grid-item">
-            <img src="../ressources/images/cake1.jpg" alt="images patisserie" />
+            <div class="text">Number Cake</div>
+            <div class="overlay">
+              <img
+                src="../ressources/images/cake1.jpg"
+                alt="images patisserie"
+              />
+            </div>
           </div>
           <div class="grid-item">
-            <img src="../ressources/images/cake2.jpg" alt="images patisserie" />
+            <div class="text">Wedding Cake</div>
+            <div class="overlay">
+              <img
+                src="../ressources/images/cake2.jpg"
+                alt="images patisserie"
+              />
+            </div>
           </div>
           <div class="grid-item">
-            <img src="../ressources/images/cake3.jpg" alt="images patisserie" />
+            <div class="text">Cake Anniversaire</div>
+            <div class="overlay">
+              <img
+                src="../ressources/images/cake3.jpg"
+                alt="images patisserie"
+              />
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="text">Number Cake</div>
+            <div class="overlay">
+              <img
+                src="../ressources/images/cake1.jpg"
+                alt="images patisserie"
+              />
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="text">Wedding Cake</div>
+            <div class="overlay">
+              <img
+                src="../ressources/images/cake2.jpg"
+                alt="images patisserie"
+              />
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="text">Cake Anniversaire</div>
+            <div class="overlay">
+              <img
+                src="../ressources/images/cake3.jpg"
+                alt="images patisserie"
+              />
+            </div>
           </div>
         </div>
         <!-- slider -->
@@ -116,6 +160,7 @@
           <img
             class="img-visible-slider"
             src="../ressources/images/food1.jpg"
+            alt="image food"
           />
 
           <button class="btn-left" type="button">
@@ -133,65 +178,115 @@
         </div>
 
         <div class="txt-photos">
-          <h2>Origine des photos</h2>
+          <h2 class="title-origin-photos">Origine des photos</h2>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-            nobis corrupti quia expedita vitae quae, beatae pariatur suscipit
-            reiciendis enim? Lorem, ipsum dolor sit amet consectetur adipisicing
-            elit. Doloribus nobis corrupti quia expedita vitae quae, beatae
-            pariatur suscipit reiciendis enim?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+            autem facilis aspernatur. Vitae cupiditate amet consequuntur?
+            Veritatis, distinctio facilis assumenda reprehenderit blanditiis
+            sequi aut eius consequatur obcaecati vitae sit nesciunt error ea
+            consectetur quidem tenetur dolores aliquam doloribus rerum libero
+            ducimus, enim fuga necessitatibus quae! Totam voluptas laboriosam,
+            culpa officiis libero hic, quisquam vero inventore enim, eum atque
+            nam? Quos doloribus nihil quidem aliquid necessitatibus temporibus
+            dignissimos adipisci! Asperiores repellendus repellat adipisci
+            repudiandae, deleniti culpa hic nihil tempore dolorem eos in nulla
+            exercitationem enim alias ratione non error blanditiis sapiente esse
+            consectetur modi unde illo. Odit quaerat illo at repudiandae.
           </p>
           <span>Photos prises et réalisé par: nom site web et/ou mail</span>
         </div>
       </div>
     </main>
-    <footer>
+    <!-- Section Contact -->
+    <section id="contact">
       <div class="adress">
-        <h3>Adresse</h3>
-        <img src="" alt="image-plat" />
-        <img src="" alt="image-gateau" />
-        <p>9 Impasse du Petit Pailler 44310 St Philbert de Grand Lieu</p>
+        <div class="adresse-logo">
+          <div class="adresse-footer">
+            <img
+              class="logo-adresse"
+              src="../ressources/logos/pot-of-food.png"
+              alt="logo traiteur"
+            />
+            <h4 class="title-contact">Adresse</h4>
+            <img
+              class="logo-adresse"
+              src="../ressources/logos/shortcake.png"
+              alt="logo patisserie"
+            />
+          </div>
+          <div>
+            <p>9 impasse du petit Pailler</p>
+            <p>44310 St Philbert de Grand Lieu</p>
+          </div>
+        </div>
+        <img class="logo" src="../ressources/logos/logo1.png" alt="logo" />
+        <div class="reseaux">
+          <h4 class="title-reseaux">Réseaux</h4>
+          <ul>
+            <li>
+              <a
+                href="https://api.whatsapp.com/send?phone=+33659299771"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="logo-reseaux"
+                  src="../ressources/logos/whatsapp.png"
+                  alt="logo whatsapp"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#facebook">
+                <img
+                  class="logo-reseaux"
+                  src="../ressources/logos/facebook.png"
+                  alt="logo facebook"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#instagram">
+                <img
+                  class="logo-reseaux"
+                  src="../ressources/logos/instagram.png"
+                  alt="logo instagram"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#mail">
+                <img
+                  class="logo-reseaux"
+                  src="../ressources/logos/email.png"
+                  alt="logo mail"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <img src="" alt="logo" />
-      <div class="reseaux">
-        <h4>Réseaux</h4>
-        <ul>
-          <li>
-            <a href="#whatsapp">
-              <img src="" alt="logo" />
-            </a>
-          </li>
-          <li>
-            <a href="#facebook">
-              <img src="" alt="logo" />
-            </a>
-          </li>
-          <li>
-            <a href="#instagram">
-              <img src="" alt="logo" />
-            </a>
-          </li>
-          <li>
-            <a href="#mail">
-              <img src="" alt="logo" />
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <p>
-          &copy; Depuis Tout Droits réservés
-          <a
-            class="link-cgu"
-            href="cgu.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Mentions légales</a
-          >
-        </p>
-      </div>
+    </section>
+    <footer>
+      <p>
+        &copy; Depuis Tout Droits réservés
+        <a
+          class="link-cgu"
+          href="cgu.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Mentions légales</a
+        >
+      </p>
     </footer>
 
+    <!-- Scroll UP -->
+    <a href="#" class="scrollup" id="scroll-up">
+      <img src="../ressources/logos/arrow-up.png" alt="arrow up" />
+    </a>
+
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="../js/index.js"></script>
     <script src="../js/page.js"></script>
   </body>
 </html>

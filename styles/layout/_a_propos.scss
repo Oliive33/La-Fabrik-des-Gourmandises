@@ -1,0 +1,121 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+body {
+  font-family: $font-text;
+  // background: linear-gradient(47deg, #c4c4c4 0%, #c9bcbc 80%);
+  // @include background-body;
+}
+/* --------------------header à propos-------------------- */
+.top-a-propos {
+  background: url(../../ressources/images/background1.png) no-repeat bottom;
+  border: 8px solid $color-primary;
+  margin: 0 auto;
+  padding: 20px 0px 0px 0px;
+  width: 80%;
+  border-radius: 5px;
+
+  .item-top-propos {
+    display: flex;
+    align-items: center;
+  }
+  .arrow-left {
+    position: absolute;
+    top: 48px;
+    left: 155px;
+  }
+
+  .title-a-propos {
+    font-family: $font-title;
+    letter-spacing: 9px;
+    font-size: 65px;
+    text-align: center;
+    padding: 5px;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 0 auto 60px;
+  }
+}
+/* --------------------container-------------------- */
+.section {
+  border-bottom: 1px dashed #000;
+  margin: 2rem 0 5rem 0;
+  padding: 4rem;
+}
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin: 0 2rem;
+}
+
+.features__img {
+  width: 500px;
+  height: 300px;
+  box-shadow: 3px 6px 11px 0px rgba(58, 57, 57, 0.75);
+  transition: 0.2s ease-in-out;
+}
+.features__img2 {
+  width: 450px;
+  height: 550px;
+}
+
+.features__img:hover {
+  transform: scale(1.05);
+}
+
+.features__feature {
+  align-self: center;
+  justify-self: center;
+  //   width: 75%;
+  font-size: 1.4rem;
+  background: url(../../ressources/images/background1.png) no-repeat center /
+    cover fixed;
+  border: 5px solid $color-primary;
+  border-radius: 5px;
+}
+.features__feature p {
+  font-size: 21px;
+  line-height: 1.3;
+  position: relative;
+  padding: 10px;
+}
+
+.features__titles {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 1rem;
+  font-family: $font-title;
+}
+.features__header {
+  font-size: 55px;
+  margin: 7px 0px 0px 8px;
+}
+// ----------------Form Contact----------------//
+.form-contact {
+  margin: 50px auto 150px;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 9999px;
+  background: $color-secondary;
+  border: 5px solid $color-primary;
+  width: 30%;
+
+  .form-title {
+    font-family: $font-title;
+    font-size: 45px;
+  }
+}

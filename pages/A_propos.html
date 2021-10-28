@@ -14,101 +14,201 @@
       crossorigin="anonymous"
     ></script>
     <title>A propos-La Fabri'K des Gourmandises</title>
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../ressources/logos/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../ressources/logos/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../ressources/logos/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../ressources/logos/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="../ressources/logos/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
-    <header>
-      <a href="index.html">
-        <i class="fas fa-arrow-left"></i>
-      </a>
-      <img src="" alt="arrow" />
-      <h1>À Propos</h1>
+    <header class="top-a-propos">
+      <div class="item-top-propos">
+        <a href="../index.html">
+          <img
+            class="arrow-left"
+            src="../ressources/logos/arrow.png"
+            alt="arrow"
+          />
+        </a>
+        <h1 class="title-a-propos">À Propos</h1>
+      </div>
     </header>
     <main>
       <div class="container">
-        <div class="savoir-faire">
-          <h2>Savoir-Faire</h2>
-          <img src="" alt="" />
-          <p class="txt-savoir-faire">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
-            neque, excepturi omnis tempore consequatur quis est, ad voluptate
-            incidunt voluptatibus quidem iusto enim, sequi inventore minima
-            natus quo unde! Doloremque illo facilis consequatur odio beatae eius
-            ipsa quo provident eveniet?
-          </p>
-        </div>
-        <div class="evenements">
-          <h2>Évenements</h2>
-          <p class="txt-evenements">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
-            neque, excepturi omnis tempore consequatur quis est, ad voluptate
-            incidunt voluptatibus quidem iusto enim, sequi inventore minima
-            natus quo unde! Doloremque illo facilis consequatur odio beatae eius
-            ipsa quo provident eveniet?
-          </p>
-          <img src="" alt="" />
-        </div>
-        <div class="specialite">
-          <h2>Spécialités</h2>
-          <img src="" alt="" />
-          <p class="txt-specialite">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
-            neque, excepturi omnis tempore consequatur quis est, ad voluptate
-            incidunt voluptatibus quidem iusto enim, sequi inventore minima
-            natus quo unde! Doloremque illo facilis consequatur odio beatae eius
-            ipsa quo provident eveniet?
-          </p>
+        <section class="section" id="section--1">
+          <div class="features vague1">
+            <img
+              src="../ressources/images/macarons.jpg"
+              data-src="img/digital.jpg"
+              alt="macarons"
+              class="features__img lazy-img"
+            />
+            <div class="features__feature">
+              <div class="features__titles">
+              
+                <h4 class="features__header">Savoir-Faire</h4>
+              </div>
+  
+  
+              <p id="hosting">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ducimus nostrum accusantium exercitationem nam obcaecati ratione perferendis recusandae molestias explicabo autem, aspernatur et inventore nesciunt soluta rem atque eum sequi enim nisi sapiente sunt? Recusandae earum molestias rerum repellat eum voluptas illum molestiae adipisci quis, harum beatae architecto dolorem voluptatem!
+              </p>
+            </div>
+  
+            <div class="features__feature vague2">
+              <div class="features__titles">
+               
+                <h4 class="features__header">Èvénements</h4>
+              </div>
+              <div class="titles">
+              </div>
+              <p id="developpement">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem animi molestias tenetur neque necessitatibus facere sunt consectetur accusantium, at accusamus excepturi ut error. Dolorum accusantium culpa esse quod assumenda eius consectetur obcaecati iusto eveniet eaque libero explicabo unde, natus, totam aut possimus! Dolorem incidunt magnam voluptatibus cupiditate voluptates optio tempore!
+              </p>
+            </div>
+            <img
+              src="../ressources/images/evenements.jpg"
+              data-src="img/grow.jpg"
+              alt="evènements"
+              class="features__img2"
+            />
+  
+            <img
+              src="../ressources/images/specialite.jpg"
+              data-src="img/card.jpg"
+              alt="spécialités"
+              class="features__img lazy-img"
+            />
+            <div class="features__feature vague3">
+              <div class="features__titles">
+               
+                <h4 class="features__header">Spécialités</h4>
+              </div>
+              <div class="titles">
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab optio ipsum perferendis nesciunt officiis aut natus dicta commodi illo voluptas excepturi quas at modi impedit accusamus neque, amet facilis consequuntur temporibus quod officia. Nulla minus ullam officia amet aperiam voluptates debitis ut fugiat, dignissimos nam. Magnam, nihil libero! Et, culpa.
+              </p>
+            </div>
+          </div>
+        </section>
         </div>
         <div class="form-contact">
-          <h3>Formulaire de Contact</h3>
+          <h3 class="form-title">Formulaire de Contact</h3>
         </div>
       </div>
     </main>
-    <footer>
+    <!-- Section Contact -->
+    <section id="contact">
       <div class="adress">
-        <h3>Adresse</h3>
-        <img src="" alt="image-plat" />
-        <img src="" alt="image-gateau" />
-        <p>9 Impasse du Petit Pailler 44310 St Philbert de Grand Lieu</p>
+        <div class="adresse-logo">
+          <div class="adresse-footer">
+            <img
+              class="logo-adresse"
+              src="../ressources/logos/pot-of-food.png"
+              alt="logo traiteur"
+            />
+            <h4 class="title-contact">Adresse</h4>
+            <img
+              class="logo-adresse"
+              src="../ressources/logos/shortcake.png"
+              alt="logo patisserie"
+            />
+          </div>
+          <div>
+            <p>9 impasse du petit Pailler</p>
+            <p>44310 St Philbert de Grand Lieu</p>
+          </div>
+        </div>
+        <img class="logo" src="../ressources/logos/logo1.png" alt="logo" />
+        <div class="reseaux">
+          <h4 class="title-reseaux">Réseaux</h4>
+          <ul>
+            <li>
+              <a
+                href="https://api.whatsapp.com/send?phone=+33659299771"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="logo-reseaux"
+                  src="../ressources/logos/whatsapp.png"
+                  alt="logo whatsapp"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#facebook">
+                <img
+                  class="logo-reseaux"
+                  src="../ressources/logos/facebook.png"
+                  alt="logo facebook"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#instagram">
+                <img
+                  class="logo-reseaux"
+                  src="../ressources/logos/instagram.png"
+                  alt="logo instagram"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#mail">
+                <img
+                  class="logo-reseaux"
+                  src="../ressources/logos/email.png"
+                  alt="logo mail"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <img src="" alt="logo" />
-      <div class="reseaux">
-        <h4>Réseaux</h4>
-        <ul>
-          <li>
-            <a href="#whatsapp">
-              <img src="" alt="logo" />
-            </a>
-          </li>
-          <li>
-            <a href="#facebook">
-              <img src="" alt="logo" />
-            </a>
-          </li>
-          <li>
-            <a href="#instagram">
-              <img src="" alt="logo" />
-            </a>
-          </li>
-          <li>
-            <a href="#mail">
-              <img src="" alt="logo" />
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <p>
-          &copy; Depuis Tout Droits réservés
-          <a
-            class="link-cgu"
-            href="cgu.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Mentions légales</a
-          >
-        </p>
-      </div>
+    </section>
+    <footer>
+      <p>
+        &copy; Depuis Tout Droits réservés
+        <a
+          class="link-cgu"
+          href="cgu.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Mentions légales</a
+        >
+      </p>
     </footer>
+
+    <!-- Scroll UP -->
+    <a href="#" class="scrollup" id="scroll-up">
+      <img src="../ressources/logos/arrow-up.png" alt="arrow up" />
+    </a>
+
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/page.js"></script>
   </body>
 </html>

@@ -147,8 +147,7 @@ body {
 }
 /* --------------------Sections Parallax traiteur et patisserie-------------------- */
 .parallax-traiteur {
-  background: url(../../ressources/images/parallax1.webp) no-repeat right /
-    cover fixed;
+  background: url(../../ressources/parallax.webp) no-repeat right / cover fixed;
   @include parallax;
   opacity: 0.6;
 }
@@ -160,8 +159,7 @@ body {
   text-align: center;
 }
 .parallax-patisserie {
-  background: url(../../ressources/images/parallax.webp) no-repeat top / cover
-    fixed;
+  background: url(../../ressources/parallax.webp) no-repeat top / cover fixed;
   opacity: 0.6;
   @include parallax;
 }

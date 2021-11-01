@@ -22,10 +22,8 @@ body {
 /* --------------------header-------------------- */
 
 .titre-principal {
-  background: $background-primary;
-  background-position: bottom;
+  background: url(../../background.webp) no-repeat bottom;
   background-size: cover;
-  background-repeat: no-repeat;
   border: 5px solid $color-primary;
   text-shadow: $shadow-text;
 

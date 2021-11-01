@@ -37,10 +37,8 @@ body {
 
 /* --------------------header-------------------- */
 .titre-principal {
-  background: url(../../background.webp);
-  background-position: bottom;
+  background: url(../../background.webp) no-repeat bottom;
   background-size: cover;
-  background-repeat: no-repeat;
   border: 5px solid #9b9a9a;
   text-shadow: 0px 3px 5px rgba(121, 121, 121, 0.6);
 }

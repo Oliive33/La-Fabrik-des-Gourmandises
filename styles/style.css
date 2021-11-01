@@ -37,7 +37,7 @@ body {
 
 /* --------------------header-------------------- */
 .titre-principal {
-  background: url(../../ressources/images/background.webp);
+  background: url(../../background.webp);
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -135,7 +135,7 @@ body {
   margin: 100px auto 100px;
   font-size: 50px;
   text-align: center;
-  background: url(../../ressources/images/background.webp) no-repeat bottom/cover fixed;
+  background: url(../background.webp) no-repeat bottom/cover fixed;
   width: 90%;
   opacity: 0.9;
   border-radius: 5px;
@@ -307,7 +307,7 @@ body {
   margin: 100px auto 100px;
   font-size: 50px;
   text-align: center;
-  background: url(../../ressources/images/background.webp) no-repeat bottom/cover fixed;
+  background: url(../background.webp) no-repeat bottom/cover fixed;
   width: 90%;
   opacity: 0.9;
   border-radius: 5px;
@@ -342,7 +342,7 @@ body {
 .localisation {
   margin: 100px auto 0;
   padding: 10px 5px 40px 5px;
-  background: url(../../ressources/images/background.webp) no-repeat bottom/cover fixed;
+  background: url(../background.webp) no-repeat bottom/cover fixed;
   border: 7px solid #9b9a9a;
   width: 50%;
   border-radius: 5px;

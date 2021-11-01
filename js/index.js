@@ -27,6 +27,7 @@ function initMap() {
     detailWindow.open(map, marker);
   });
 }
+
 // Scroll up
 function scrollUp() {
   const scrollUp = document.getElementById("scroll-up");

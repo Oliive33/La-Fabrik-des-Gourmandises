@@ -23,7 +23,9 @@ body {
 
 .titre-principal {
   background: $background-primary;
-  background-position: center;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
   border: 5px solid $color-primary;
   text-shadow: $shadow-text;
 

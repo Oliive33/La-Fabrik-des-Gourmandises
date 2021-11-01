@@ -35,3 +35,19 @@ function scrollUp() {
   else scrollUp.classList.remove("show-scroll");
 }
 window.addEventListener("scroll", scrollUp);
+
+/*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "80px",
+  duration: 2500,
+  delay: 400,
+  // reset: true
+});
+
+sr.reveal(`.titre-principal, .nav-links, .traiteur`);
+sr.reveal(`.patisserie, .localisation, .about`, {
+  interval: 100,
+});
+// sr.reveal(`.txt-traiteur, .parallax-traiteur`, { origin: "left" });
+// sr.reveal(`.txt-patisserie, .parallax-patisserie`, { origin: "right" });

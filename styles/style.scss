@@ -11,7 +11,8 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./layout/index";
-@import "./layout/scroll";
 @import "./layout/galerie_photos";
 @import "./layout/a_propos";
 @import "./layout/footer";
+@import "./component/responsive";
+@import "./component/scroll";

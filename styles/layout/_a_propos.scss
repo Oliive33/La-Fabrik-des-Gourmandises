@@ -10,11 +10,11 @@ html {
   max-width: 1440px;
   margin: 0 auto;
 }
-body {
-  font-family: $font-text;
-  // background: linear-gradient(47deg, #c4c4c4 0%, #c9bcbc 80%);
-  // @include background-body;
-}
+// body {
+//   font-family: $font-text;
+//   padding: 0.5rem 0.1rem 0 0.1rem;
+//   background: linear-gradient(90deg, #5c595c 0%, #363636 80%);
+// }
 /* --------------------header à propos-------------------- */
 .top-a-propos {
   background: url(../../ressources/images/background1.png) no-repeat bottom;

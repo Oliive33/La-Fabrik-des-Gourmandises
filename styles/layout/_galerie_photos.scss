@@ -10,16 +10,17 @@ html {
   max-width: 1440px;
   margin: 0 auto;
 }
-body {
-  font-family: $font-text;
-  // background: linear-gradient(47deg, #c4c4c4 0%, #c9bcbc 80%);
-  // @include background-body;
-  background: rgb(80, 71, 53);
-}
+// body {
+//   height: 100vh;
+//   font-family: $font-text;
+//   padding: 0.5rem 0.1rem 0 0.1rem;
+//   background: linear-gradient(90deg, #5c595c 0%, #363636 80%);
+// }
 /* --------------------header-------------------- */
 .top {
   background: url(../../ressources/images/background1.png) no-repeat bottom;
   border: 5px solid $color-primary;
+  border-radius: 4px;
   margin: 0 auto;
   padding: 20px 0px 20px 0px;
   width: 80%;
@@ -177,7 +178,7 @@ body {
     transition: 0.8s;
   }
   .text {
-    color: #575757;
+    color: #3b3b3b;
     font-size: 20px;
     font-weight: bolder;
     position: absolute;

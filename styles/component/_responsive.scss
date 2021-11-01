@@ -1,0 +1,217 @@
+//Responsive style index.html
+
+// Section Traiteur et Patisserie
+@media screen and (max-width: 1200px) {
+  .traiteur {
+    h2 {
+      margin: 70px auto 10px;
+    }
+  }
+
+  .items-traiteur {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    .txt-traiteur {
+      margin-left: 0px;
+      margin-top: 200px;
+      width: 80%;
+      height: auto;
+    }
+  }
+  .patisserie {
+    margin: 80px 0px 80px 0px;
+    h2 {
+      margin: 50px auto 0px;
+    }
+  }
+  .items-patisserie {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .txt-patisserie {
+      margin-right: 0px;
+      margin-top: 210px;
+      width: 80%;
+      height: auto;
+    }
+  }
+  .slideshow {
+    position: revert;
+    margin: 50px 0px 130px 0px;
+  }
+  .slideshow-item img {
+    width: 70%;
+    height: 295px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .traiteur {
+    margin: 50px 0px 80px 0px;
+
+    h2 {
+      margin: 40px auto 10px;
+    }
+  }
+  .txt-traiteur,
+  .txt-patisserie {
+    font-size: 18px;
+  }
+  .parallax-patisserie,
+  .parallax-traiteur {
+    flex-wrap: wrap;
+  }
+
+  .txt-par1,
+  .txt-par2 {
+    font-size: 23px;
+    margin: 0 45px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .titre-principal {
+    height: 450px;
+    background-position: bottom;
+
+    h1 {
+      font-size: 50px;
+    }
+
+    img {
+      width: 45px;
+      height: 45px;
+    }
+  }
+  .nav-links {
+    flex-direction: column;
+
+    li {
+      margin: 20px;
+    }
+  }
+  .txt-par1,
+  .txt-par2 {
+    font-size: 22px;
+    margin: 0 65px;
+  }
+  /* --------------------Responsive Style Section Adresse & Map-------------------- */
+  .localisation {
+    margin: 50px auto 0;
+    width: 70%;
+
+    .local {
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+  }
+  #map {
+    border-radius: 4px;
+    width: 70%;
+  }
+
+  /* --------------------Responsive style Footer page1-------------------- */
+
+  .about {
+    flex-direction: column;
+
+    .link-about {
+      margin: 15px;
+    }
+  }
+}
+@media screen and (max-width: 580px) {
+  .titre-principal {
+    height: 475px;
+    background-position: bottom;
+
+    h1 {
+      font-size: 40px;
+    }
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .nav-links {
+    flex-direction: column;
+
+    a {
+      font-size: 21px;
+    }
+
+    li {
+      margin: 15px;
+    }
+  }
+  .txt-par1,
+  .txt-par2 {
+    font-size: 20px;
+    margin: 0 65px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .titre-principal {
+    .titre-logos {
+      padding: 10px 0 50px 0px;
+    }
+
+    h1 {
+      font-size: 35px;
+    }
+    img {
+      width: 35px;
+      height: 35px;
+    }
+  }
+  .traiteur {
+    margin: 20px auto 10px;
+
+    h2 {
+      margin: 40px auto 10px;
+    }
+  }
+  .items-traiteur {
+    margin: 15px 0 40px 0;
+
+    .txt-traiteur {
+      width: 91%;
+    }
+  }
+  .slideshow img {
+    width: 85%;
+  }
+  .parallax-traiteur {
+    height: 320px;
+  }
+  .parallax-patisserie {
+    height: 425px;
+  }
+  .txt-par1,
+  .txt-par2 {
+    font-size: 20px;
+    margin: 0 50px;
+  }
+
+  .patisserie {
+    h2 {
+      margin: 10px auto 0px;
+    }
+  }
+  .items-patisserie {
+    margin: 20px 0 60px 0;
+
+    .txt-patisserie {
+      width: 92%;
+    }
+  }
+  .localisation {
+    margin: 0 auto 0;
+    width: 87%;
+  }
+  #map {
+    width: 85%;
+  }
+  .about {
+    margin-top: 70px;
+  }
+}

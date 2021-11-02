@@ -11,7 +11,8 @@
   margin: 100px auto 100px;
   font-size: 50px;
   text-align: center;
-  background: url(../../background.webp) no-repeat bottom / cover fixed;
+  background: url(../../ressources/images/background.webp) no-repeat bottom /
+    cover fixed;
   width: 90%;
   opacity: 0.9;
   border-radius: 5px;
@@ -20,7 +21,8 @@
 }
 
 @mixin backgrounds {
-  background: url(../../background.webp) no-repeat bottom / cover fixed;
+  background: url(../../ressources/images/background.webp) no-repeat bottom /
+    cover fixed;
   border: 7px solid $color-primary;
 }
 

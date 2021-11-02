@@ -521,7 +521,7 @@ html {
 
 /* --------------------header-------------------- */
 .top {
-  background: url(../../ressources/images/background1.png) no-repeat bottom;
+  background: url(../ressources/images/background.webp) no-repeat bottom;
   border: 5px solid #9b9a9a;
   border-radius: 4px;
   margin: 0 auto;
@@ -745,7 +745,7 @@ html {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   text-align: center;
-  background: url(../../ressources/images/background1.png) no-repeat bottom/cover fixed;
+  background: url(../ressources/images/background.webp) no-repeat bottom/cover fixed;
   border: 4px solid #9b9a9a;
   -webkit-box-shadow: 1px 6px 20px 0px rgba(79, 79, 79, 0.75);
           box-shadow: 1px 6px 20px 0px rgba(79, 79, 79, 0.75);
@@ -759,7 +759,7 @@ html {
 .container .txt-photos {
   text-align: center;
   margin: 100px auto 100px;
-  background: url(../../ressources/images/background1.png) no-repeat bottom;
+  background: url(../ressources/images/background.webp) no-repeat bottom;
   border: 8px solid #9b9a9a;
   width: 80%;
   border-radius: 5px;
@@ -801,7 +801,7 @@ html {
 
 /* --------------------header à propos-------------------- */
 .top-a-propos {
-  background: url(../../ressources/images/background1.png) no-repeat bottom;
+  background: url(../ressources/images/background.webp) no-repeat bottom;
   border: 8px solid #9b9a9a;
   margin: 0 auto;
   padding: 20px 0px 0px 0px;
@@ -877,7 +877,7 @@ html {
   -ms-grid-column-align: center;
       justify-self: center;
   font-size: 1.4rem;
-  background: url(../../ressources/images/background1.png) no-repeat center fixed;
+  background: url(../ressources/images/background.webp) no-repeat center fixed;
   border: 5px solid #9b9a9a;
   border-radius: 5px;
 }

@@ -17,7 +17,7 @@ html {
 // }
 /* --------------------header à propos-------------------- */
 .top-a-propos {
-  background: url(../../ressources/images/background1.png) no-repeat bottom;
+  background: url(../ressources/images/background.webp) no-repeat bottom;
   border: 8px solid $color-primary;
   margin: 0 auto;
   padding: 20px 0px 0px 0px;
@@ -78,8 +78,7 @@ html {
   justify-self: center;
   //   width: 75%;
   font-size: 1.4rem;
-  background: url(../../ressources/images/background1.png) no-repeat center
-    fixed;
+  background: url(../ressources/images/background.webp) no-repeat center fixed;
   border: 5px solid $color-primary;
   border-radius: 5px;
 }

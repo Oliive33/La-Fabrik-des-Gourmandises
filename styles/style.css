@@ -515,6 +515,9 @@ footer {
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -759,7 +762,8 @@ html {
 .container .txt-photos {
   text-align: center;
   margin: 100px auto 100px;
-  background: url(../ressources/images/background.webp) no-repeat bottom;
+  background: url(../ressources/images/background.webp) no-repeat;
+  background-position: 4% 11%;
   border: 8px solid #9b9a9a;
   width: 80%;
   border-radius: 5px;
@@ -1223,6 +1227,165 @@ html {
   }
   .about {
     margin-top: 70px;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .container .grille-traiteur,
+  .container .grille-patisserie {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (305px)[auto-fill];
+        grid-template-columns: repeat(auto-fill, 305px);
+  }
+  .container .grid-item {
+    height: 180px;
+    margin: 15px 15px;
+  }
+  .container .grid-item img {
+    height: 180px;
+  }
+  .container .text {
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .top .arrow-left {
+    position: absolute;
+    top: 55px;
+    left: 155px;
+  }
+  .top .titles-galerie-secondary {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 28px;
+  }
+  .top .titles-galerie1 {
+    margin: 0px 15px 15px 10px;
+  }
+  .top .titles-galerie2 {
+    margin: 0px 15px 15px 10px;
+  }
+  .container .grille-traiteur,
+  .container .grille-patisserie {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (250px)[auto-fill];
+        grid-template-columns: repeat(auto-fill, 250px);
+  }
+  .container .txt-photos {
+    width: 90%;
+  }
+  .container p {
+    width: 80%;
+    line-height: 1.7;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .top {
+    width: 90%;
+  }
+  .top .arrow-left {
+    position: absolute;
+    top: 55px;
+    left: 100px;
+  }
+  .container .btn-fermer-slider {
+    width: 45px;
+    height: 45px;
+    font-size: 19px;
+  }
+  .container .btn-left,
+  .container .btn-right {
+    width: 40px;
+    height: 40px;
+  }
+  .container .btn-left img,
+  .container .btn-right img {
+    width: 20px;
+    height: 20px;
+  }
+  .container .img-visible-slider {
+    width: 95%;
+    height: 500px;
+  }
+  .container .txt-photos {
+    width: 95%;
+  }
+  .container p {
+    margin: 8px auto 0;
+    width: 90% !important;
+    line-height: 1.6;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .top {
+    width: 95%;
+    background-position: 30% 40%;
+  }
+  .top .arrow-left {
+    position: absolute;
+    top: 39px;
+    left: 21px;
+  }
+  .top .title-galerie {
+    margin: 0 auto 40px;
+    font-size: 55px;
+  }
+  .top .titles-galerie-secondary {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 26px;
+  }
+  .container .grille-traiteur,
+  .container .grille-patisserie {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (200px)[auto-fill];
+        grid-template-columns: repeat(auto-fill, 200px);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .top .arrow-left {
+    position: absolute;
+    top: 51px;
+    left: 18px;
+  }
+  .container .grille-traiteur,
+  .container .grille-patisserie {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (423px)[auto-fill];
+        grid-template-columns: repeat(auto-fill, 423px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .adress {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .adress .adresse-logo {
+    margin: 15px;
   }
 }
 

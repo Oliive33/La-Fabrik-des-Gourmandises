@@ -7,15 +7,15 @@
 }
 html {
   scroll-behavior: smooth;
+}
+body {
   max-width: 1440px;
   margin: 0 auto;
+  // height: 100vh;
+  // font-family: $font-text;
+  // padding: 0.5rem 0.1rem 0 0.1rem;
+  // background: linear-gradient(90deg, #5c595c 0%, #363636 80%);
 }
-// body {
-//   height: 100vh;
-//   font-family: $font-text;
-//   padding: 0.5rem 0.1rem 0 0.1rem;
-//   background: linear-gradient(90deg, #5c595c 0%, #363636 80%);
-// }
 /* --------------------header-------------------- */
 .top {
   background: url(../ressources/images/background.webp) no-repeat bottom;
@@ -201,7 +201,8 @@ html {
   .txt-photos {
     text-align: center;
     margin: 100px auto 100px;
-    background: url(../ressources/images/background.webp) no-repeat bottom;
+    background: url(../ressources/images/background.webp) no-repeat;
+    background-position: 4% 11%;
     border: 8px solid $color-primary;
     width: 80%;
     border-radius: 5px;

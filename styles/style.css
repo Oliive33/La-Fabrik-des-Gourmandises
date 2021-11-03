@@ -744,7 +744,6 @@ body {
   top: 0;
   width: 100%;
   height: 0%;
-  background: rgba(113, 114, 114, 0.705);
   overflow: hidden;
   -webkit-transition: 0.8s;
   transition: 0.8s;
@@ -1468,7 +1467,7 @@ html {
   }
   .container .img-visible-slider {
     width: 95%;
-    height: 500px;
+    height: 375px;
   }
   .container .txt-photos {
     width: 95%;
@@ -1511,6 +1510,9 @@ html {
   }
   .container .grid-item {
     margin: 29px 20px;
+  }
+  .container .grid-item img {
+    width: 95%;
   }
 }
 

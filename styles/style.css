@@ -837,7 +837,7 @@ html {
 .top-a-propos .arrow-left {
   position: absolute;
   top: 48px;
-  left: 195px;
+  left: 225px;
 }
 
 .top-a-propos .title-a-propos {
@@ -894,60 +894,6 @@ html {
 .carousel .changeHidden .element {
   font-weight: 700;
   font-size: 35px;
-}
-
-@-webkit-keyframes carousel {
-  0%,
-  20% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  25%,
-  45% {
-    -webkit-transform: translateY(-13rem);
-            transform: translateY(-13rem);
-  }
-  50%,
-  70% {
-    -webkit-transform: translateY(-26rem);
-            transform: translateY(-26rem);
-  }
-  75%,
-  95% {
-    -webkit-transform: translateY(-39rem);
-            transform: translateY(-39rem);
-  }
-  100% {
-    -webkit-transform: translateY(-52rem);
-            transform: translateY(-52rem);
-  }
-}
-
-@keyframes carousel {
-  0%,
-  20% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  25%,
-  45% {
-    -webkit-transform: translateY(-13rem);
-            transform: translateY(-13rem);
-  }
-  50%,
-  70% {
-    -webkit-transform: translateY(-26rem);
-            transform: translateY(-26rem);
-  }
-  75%,
-  95% {
-    -webkit-transform: translateY(-39rem);
-            transform: translateY(-39rem);
-  }
-  100% {
-    -webkit-transform: translateY(-52rem);
-            transform: translateY(-52rem);
-  }
 }
 
 /* --------------------Main-------------------- */

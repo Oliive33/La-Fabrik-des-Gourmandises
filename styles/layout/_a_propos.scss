@@ -36,7 +36,7 @@ html {
   .arrow-left {
     position: absolute;
     top: 48px;
-    left: 195px;
+    left: 225px;
   }
 
   .title-a-propos {
@@ -95,27 +95,27 @@ html {
   font-weight: 700;
   font-size: 35px;
 }
-@keyframes carousel {
-  0%,
-  20% {
-    transform: translateY(0);
-  }
-  25%,
-  45% {
-    transform: translateY(-13rem);
-  }
-  50%,
-  70% {
-    transform: translateY(-26rem);
-  }
-  75%,
-  95% {
-    transform: translateY(-39rem);
-  }
-  100% {
-    transform: translateY(-52rem);
-  }
-}
+// @keyframes carousel {
+//   0%,
+//   20% {
+//     transform: translateY(0);
+//   }
+//   25%,
+//   45% {
+//     transform: translateY(-13rem);
+//   }
+//   50%,
+//   70% {
+//     transform: translateY(-26rem);
+//   }
+//   75%,
+//   95% {
+//     transform: translateY(-39rem);
+//   }
+//   100% {
+//     transform: translateY(-52rem);
+//   }
+// }
 /* --------------------Main-------------------- */
 .section {
   border-bottom: 1px dashed #000;

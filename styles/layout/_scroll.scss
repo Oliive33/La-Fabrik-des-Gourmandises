@@ -24,3 +24,8 @@
 .show-scroll {
   bottom: 64px;
 }
+@media screen and (max-width: 380px) {
+  .show-scroll {
+    bottom: 78px;
+  }
+}

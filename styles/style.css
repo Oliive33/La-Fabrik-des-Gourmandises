@@ -864,14 +864,6 @@ html {
   color: white;
 }
 
-.centre {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  margin-top: -2.25rem;
-}
-
 .carousel {
   position: relative;
   width: 100%;
@@ -895,8 +887,8 @@ html {
 
 .carousel .changeHidden .contenant {
   position: relative;
-  -webkit-animation: carousel 10s ease-in-out infinite;
-          animation: carousel 10s ease-in-out infinite;
+  -webkit-animation: carousel 12s ease-in-out infinite;
+          animation: carousel 12s ease-in-out infinite;
 }
 
 .carousel .changeHidden .element {
@@ -1693,6 +1685,10 @@ html {
 }
 
 @media screen and (max-width: 405px) {
+  .phraseSlide {
+    height: auto;
+    width: 100%;
+  }
   .carousel .changeHidden .element {
     font-size: 22px;
   }
@@ -1748,5 +1744,11 @@ html {
 /* Show Scroll Up*/
 .show-scroll {
   bottom: 64px;
+}
+
+@media screen and (max-width: 380px) {
+  .show-scroll {
+    bottom: 78px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -149,6 +149,11 @@
   }
 }
 @media screen and (max-width: 405px) {
+  .phraseSlide {
+    height: auto;
+    width: 100%;
+  }
+
   .carousel .changeHidden .element {
     font-size: 22px;
   }

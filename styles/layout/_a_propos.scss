@@ -8,13 +8,17 @@
 html {
   scroll-behavior: smooth;
 }
-body {
-  font-family: $font-text;
-  padding: 0.5rem 0.1rem 0 0.1rem;
-  max-width: 1440px;
-  margin: 0 auto;
-  // background: linear-gradient(90deg, #5c595c 0%, #363636 80%);
-}
+// body {
+//   max-width: 1440px;
+//   width: 100%;
+//   margin: 0 auto;
+//   font-family: $font-text;
+//   padding: 0.5rem 0.1rem 0 0.1rem;
+//   background: linear-gradient(90deg, #535153 0%, #363636 80%);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-position: center;
+// }
 /* --------------------header à propos-------------------- */
 .top-a-propos {
   background: url(../ressources/images/background.webp) no-repeat bottom;
@@ -84,7 +88,7 @@ body {
   margin: auto;
   height: 13rem;
   line-height: 13rem;
-  width: 95rem;
+  width: 40rem;
   overflow: hidden;
 }
 .carousel .changeHidden .contenant {

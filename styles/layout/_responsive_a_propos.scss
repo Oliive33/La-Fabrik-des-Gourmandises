@@ -1,7 +1,7 @@
 @media screen and (max-width: 1200px) {
   .cadre {
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: 50%;
   }
 
@@ -35,9 +35,14 @@
   .features {
     margin: 0;
   }
+  .features__img,
+  .features__img2 {
+    margin: 0 auto;
+  }
+
   .form-contact {
     padding: 20px 30px;
-    width: 43%;
+    width: 45%;
   }
 }
 
@@ -52,30 +57,35 @@
       top: 64px;
       left: 80px;
     }
+  }
+  .cadre {
+    position: absolute;
+    top: 25%;
+  }
+  .carousel .changeHidden {
+    width: 30rem;
+  }
 
-    .cadre {
-      position: absolute;
-      top: 25%;
-    }
+  .carousel .changeHidden .element {
+    font-size: 25px;
+  }
 
-    .features__img {
-      margin: 0 auto;
-      width: 95%;
-      height: 350px;
-    }
-    .features__img2 {
-      margin: 0 auto;
-      width: 95%;
-      height: 550px;
-    }
+  .features__img {
+    width: 95%;
+    height: 380px;
+  }
+  .features__img2 {
+    width: 95%;
+    height: 605px;
+  }
 
-    .form-contact {
-      padding: 20px 5px;
-      width: 55%;
-      margin: 50px auto 100px;
-    }
+  .form-contact {
+    padding: 20px 5px;
+    width: 65%;
+    margin: 50px auto 100px;
   }
 }
+
 @media screen and (max-width: 550px) {
   .top-a-propos {
     .arrow-left {
@@ -83,14 +93,52 @@
       top: 64px;
       left: 60px;
     }
-  }
-
-  .title-a-propos {
-    font-size: 55px;
+    .title-a-propos {
+      font-size: 55px;
+    }
   }
 
   .cadre {
     position: absolute;
     top: 24%;
+  }
+  .carousel .changeHidden {
+    width: 21rem;
+  }
+  .section {
+    padding: 1rem 1rem;
+  }
+
+  .features__img {
+    width: 100%;
+    height: 280px;
+  }
+  .features__img2 {
+    width: 95%;
+    height: 505px;
+  }
+
+  .form-contact {
+    width: 95%;
+    margin: 40px auto 45px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .top-a-propos {
+    .arrow-left {
+      position: absolute;
+      top: 64px;
+      left: 30px;
+    }
+  }
+}
+@media screen and (max-width: 405px) {
+  .features__img {
+    width: 100%;
+    height: 260px;
+  }
+  .features__img2 {
+    width: 95%;
+    height: 450px;
   }
 }

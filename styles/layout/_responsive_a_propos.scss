@@ -140,6 +140,13 @@
       left: 30px;
     }
   }
+  .cadre {
+    position: absolute;
+    top: 27%;
+  }
+  .carousel .changeHidden {
+    width: 18rem;
+  }
 }
 @media screen and (max-width: 405px) {
   .carousel .changeHidden .element {

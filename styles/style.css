@@ -1506,11 +1506,11 @@ html {
     width: 100%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (200px)[auto-fill];
-        grid-template-columns: repeat(auto-fill, 200px);
+    -ms-grid-columns: (290px)[auto-fill];
+        grid-template-columns: repeat(auto-fill, 290px);
   }
   .container .grid-item {
-    margin: 20px 40px;
+    margin: 29px 20px;
   }
 }
 
@@ -1532,10 +1532,10 @@ html {
         grid-template-columns: repeat(auto-fill, 423px);
   }
   .container .grid-item {
-    margin: 10px 30px;
+    margin: 10px 60px;
   }
   .container .txt-photos .title-origin-photos {
-    font-size: 45px;
+    font-size: 40px;
     margin-top: 10px;
     padding: 31px;
   }

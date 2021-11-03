@@ -1,5 +1,15 @@
 @media screen and (max-width: 1220px) {
+  .top {
+    .title-galerie {
+      margin: 0 auto 40px;
+    }
+  }
+
   .container {
+    .photos-container {
+      margin: 30px 0 30px 0;
+    }
+
     .grille-traiteur,
     .grille-patisserie {
       width: 100%;
@@ -16,10 +26,17 @@
     .text {
       padding: 25px;
     }
+    .txt-photos {
+      margin: 80px auto 100px;
+    }
   }
 }
 @media screen and (max-width: 900px) {
   .top {
+    .title-galerie {
+      margin: 0 auto 30px;
+    }
+
     .arrow-left {
       position: absolute;
       top: 55px;
@@ -62,6 +79,10 @@
   .top {
     width: 90%;
 
+    .title-galerie {
+      margin: 0 auto 15px;
+    }
+
     .arrow-left {
       position: absolute;
       top: 55px;
@@ -69,12 +90,18 @@
     }
   }
   .container {
-    // .grille-traiteur,
-    // .grille-patisserie {
-    //   width: 100%;
-    //   display: grid;
-    //   grid-template-columns: repeat(auto-fill, 200px);
-    // }
+    .photos-container {
+      margin: 30px;
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    .grille-traiteur,
+    .grille-patisserie {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
 
     .btn-fermer-slider {
       width: 45px;
@@ -119,7 +146,7 @@
     }
 
     .title-galerie {
-      margin: 0 auto 40px;
+      margin: 0 auto 30px;
       font-size: 55px;
     }
 
@@ -136,6 +163,9 @@
       display: grid;
       grid-template-columns: repeat(auto-fill, 200px);
     }
+    .grid-item {
+      margin: 20px 40px;
+    }
   }
 }
 @media screen and (max-width: 400px) {
@@ -147,11 +177,31 @@
     }
   }
   .container {
+    .photos-container {
+      margin: 10px;
+    }
+
     .grille-traiteur,
     .grille-patisserie {
       width: 100%;
       display: grid;
       grid-template-columns: repeat(auto-fill, 423px);
+    }
+    .grid-item {
+      margin: 20px 60px;
+    }
+    .txt-photos {
+      .title-origin-photos {
+        font-size: 45px;
+        margin-top: 10px;
+        padding: 31px;
+      }
+      p {
+        margin: 20px auto 40px;
+        width: 80%;
+        line-height: 1.8;
+        text-shadow: $shadow-text;
+      }
     }
   }
 }

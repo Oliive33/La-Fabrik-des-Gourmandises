@@ -611,8 +611,14 @@ body {
 
 /* --------------------container-------------------- */
 .container {
-  margin: 10px 0 0 0;
+  margin: 10px auto;
   /* Slider */
+}
+
+.container .photos-container {
+  margin-top: 40px;
+  background-image: radial-gradient(circle at 54% 50%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 8%, transparent 8%, transparent 92%), radial-gradient(circle at 14% 71%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 8%, transparent 8%, transparent 92%), radial-gradient(circle at 42% 48%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 6%, transparent 6%, transparent 94%), radial-gradient(circle at 97% 84%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 6%, transparent 6%, transparent 94%), radial-gradient(circle at 74% 70%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 6%, transparent 6%, transparent 94%), radial-gradient(circle at 65% 42%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 6%, transparent 6%, transparent 94%), radial-gradient(circle at 59% 88%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 4%, transparent 4%, transparent 96%), radial-gradient(circle at 10% 69%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 4%, transparent 4%, transparent 96%), radial-gradient(circle at 41% 72%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 4%, transparent 4%, transparent 96%), radial-gradient(circle at 59% 78%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 4%, transparent 4%, transparent 96%), -webkit-gradient(linear, left top, right top, from(#787777), to(#c2c0c0));
+  background-image: radial-gradient(circle at 54% 50%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 8%, transparent 8%, transparent 92%), radial-gradient(circle at 14% 71%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 8%, transparent 8%, transparent 92%), radial-gradient(circle at 42% 48%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 6%, transparent 6%, transparent 94%), radial-gradient(circle at 97% 84%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 6%, transparent 6%, transparent 94%), radial-gradient(circle at 74% 70%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 6%, transparent 6%, transparent 94%), radial-gradient(circle at 65% 42%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 6%, transparent 6%, transparent 94%), radial-gradient(circle at 59% 88%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 4%, transparent 4%, transparent 96%), radial-gradient(circle at 10% 69%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 4%, transparent 4%, transparent 96%), radial-gradient(circle at 41% 72%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 4%, transparent 4%, transparent 96%), radial-gradient(circle at 59% 78%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 4%, transparent 4%, transparent 96%), linear-gradient(90deg, #787777, #c2c0c0);
 }
 
 .container .grille-traiteur,
@@ -748,8 +754,8 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   text-align: center;
-  background: url(../ressources/images/background.webp) no-repeat bottom/cover fixed;
-  border: 4px solid #9b9a9a;
+  background: url(../ressources/images/background.webp) no-repeat bottom/cover;
+  border: 2px solid #333;
   -webkit-box-shadow: 1px 6px 20px 0px rgba(79, 79, 79, 0.75);
           box-shadow: 1px 6px 20px 0px rgba(79, 79, 79, 0.75);
   text-shadow: 0px 3px 5px rgba(121, 121, 121, 0.6);
@@ -763,7 +769,8 @@ body {
   text-align: center;
   margin: 100px auto 100px;
   background: url(../ressources/images/background.webp) no-repeat;
-  background-position: 4% 11%;
+  background-position: 11% 15%;
+  background-size: cover;
   border: 8px solid #9b9a9a;
   width: 80%;
   border-radius: 5px;
@@ -772,8 +779,7 @@ body {
 
 .container .txt-photos .title-origin-photos {
   font-size: 55px;
-  margin-top: 10px;
-  padding: 30px;
+  padding: 15px;
 }
 
 .container .txt-photos p {
@@ -799,6 +805,11 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0.5rem 0.1rem 0 0.1rem;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -806,11 +817,12 @@ html {
 /* --------------------header à propos-------------------- */
 .top-a-propos {
   background: url(../ressources/images/background.webp) no-repeat bottom;
-  border: 8px solid #9b9a9a;
+  background-size: cover;
+  border: 7px solid #9b9a9a;
   margin: 0 auto;
   padding: 20px 0px 0px 0px;
-  width: 80%;
-  border-radius: 5px;
+  width: 70%;
+  border-radius: 4px;
 }
 
 .top-a-propos .item-top-propos {
@@ -825,21 +837,128 @@ html {
 .top-a-propos .arrow-left {
   position: absolute;
   top: 48px;
-  left: 155px;
+  left: 195px;
 }
 
 .top-a-propos .title-a-propos {
   font-family: "Italianno", cursive;
-  letter-spacing: 9px;
+  letter-spacing: 7px;
   font-size: 65px;
   text-align: center;
   padding: 5px;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  margin: 0 auto 60px;
+  margin: 0 auto 15px;
 }
 
-/* --------------------container-------------------- */
+/* --------------------slide Phrases-------------------- */
+.phraseSlide {
+  height: 170px;
+  width: 100%;
+}
+
+.cadre {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+}
+
+.centre {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-top: -2.25rem;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 4.5rem;
+  text-align: center;
+  line-height: 45px;
+}
+
+.carousel .changeHidden {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin: auto;
+  height: 13rem;
+  line-height: 13rem;
+  width: 95rem;
+  overflow: hidden;
+}
+
+.carousel .changeHidden .contenant {
+  position: relative;
+  -webkit-animation: carousel 10s ease-in-out infinite;
+          animation: carousel 10s ease-in-out infinite;
+}
+
+.carousel .changeHidden .element {
+  font-weight: 700;
+  font-size: 35px;
+}
+
+@-webkit-keyframes carousel {
+  0%,
+  20% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25%,
+  45% {
+    -webkit-transform: translateY(-13rem);
+            transform: translateY(-13rem);
+  }
+  50%,
+  70% {
+    -webkit-transform: translateY(-26rem);
+            transform: translateY(-26rem);
+  }
+  75%,
+  95% {
+    -webkit-transform: translateY(-39rem);
+            transform: translateY(-39rem);
+  }
+  100% {
+    -webkit-transform: translateY(-52rem);
+            transform: translateY(-52rem);
+  }
+}
+
+@keyframes carousel {
+  0%,
+  20% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25%,
+  45% {
+    -webkit-transform: translateY(-13rem);
+            transform: translateY(-13rem);
+  }
+  50%,
+  70% {
+    -webkit-transform: translateY(-26rem);
+            transform: translateY(-26rem);
+  }
+  75%,
+  95% {
+    -webkit-transform: translateY(-39rem);
+            transform: translateY(-39rem);
+  }
+  100% {
+    -webkit-transform: translateY(-52rem);
+            transform: translateY(-52rem);
+  }
+}
+
+/* --------------------Main-------------------- */
 .section {
   border-bottom: 1px dashed #000;
   margin: 2rem 0 5rem 0;
@@ -1143,8 +1262,10 @@ html {
 
 @media screen and (max-width: 580px) {
   .titre-principal {
-    height: 475px;
-    background-position: bottom;
+    height: 485px;
+  }
+  .titre-principal .titre-logos {
+    padding: 9px;
   }
   .titre-principal h1 {
     font-size: 40px;
@@ -1174,7 +1295,7 @@ html {
 
 @media screen and (max-width: 500px) {
   .titre-principal .titre-logos {
-    padding: 10px 0 50px 0px;
+    padding: 21px;
   }
   .titre-principal h1 {
     font-size: 35px;
@@ -1231,6 +1352,12 @@ html {
 }
 
 @media screen and (max-width: 1220px) {
+  .top .title-galerie {
+    margin: 0 auto 40px;
+  }
+  .container .photos-container {
+    margin: 30px 0 30px 0;
+  }
   .container .grille-traiteur,
   .container .grille-patisserie {
     width: 100%;
@@ -1249,9 +1376,15 @@ html {
   .container .text {
     padding: 25px;
   }
+  .container .txt-photos {
+    margin: 80px auto 100px;
+  }
 }
 
 @media screen and (max-width: 900px) {
+  .top .title-galerie {
+    margin: 0 auto 30px;
+  }
   .top .arrow-left {
     position: absolute;
     top: 55px;
@@ -1296,10 +1429,26 @@ html {
   .top {
     width: 90%;
   }
+  .top .title-galerie {
+    margin: 0 auto 15px;
+  }
   .top .arrow-left {
     position: absolute;
     top: 55px;
     left: 100px;
+  }
+  .container .photos-container {
+    margin: 30px;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .container .grille-traiteur,
+  .container .grille-patisserie {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
   }
   .container .btn-fermer-slider {
     width: 45px;
@@ -1341,7 +1490,7 @@ html {
     left: 21px;
   }
   .top .title-galerie {
-    margin: 0 auto 40px;
+    margin: 0 auto 30px;
     font-size: 55px;
   }
   .top .titles-galerie-secondary {
@@ -1359,6 +1508,9 @@ html {
     -ms-grid-columns: (200px)[auto-fill];
         grid-template-columns: repeat(auto-fill, 200px);
   }
+  .container .grid-item {
+    margin: 20px 40px;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -1367,6 +1519,9 @@ html {
     top: 51px;
     left: 18px;
   }
+  .container .photos-container {
+    margin: 10px;
+  }
   .container .grille-traiteur,
   .container .grille-patisserie {
     width: 100%;
@@ -1374,6 +1529,114 @@ html {
     display: grid;
     -ms-grid-columns: (423px)[auto-fill];
         grid-template-columns: repeat(auto-fill, 423px);
+  }
+  .container .grid-item {
+    margin: 20px 60px;
+  }
+  .container .txt-photos .title-origin-photos {
+    font-size: 45px;
+    margin-top: 10px;
+    padding: 31px;
+  }
+  .container .txt-photos p {
+    margin: 20px auto 40px;
+    width: 80%;
+    line-height: 1.8;
+    text-shadow: 0px 3px 5px rgba(121, 121, 121, 0.6);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .cadre {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+  }
+  .header__img {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    margin-top: 5rem;
+  }
+  .header__title {
+    -webkit-box-flex: 0.6;
+        -ms-flex: 0.6;
+            flex: 0.6;
+    -ms-grid-rows: 3fr 2fr;
+        grid-template-rows: 3fr 2fr;
+    row-gap: 1rem;
+    margin-top: 5rem;
+  }
+  .section {
+    padding: 5rem 2rem;
+  }
+  .features {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin: 0 4rem;
+  }
+  .form-contact {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .cadre {
+    position: absolute;
+    top: 35%;
+  }
+  .features {
+    margin: 0;
+  }
+  .form-contact {
+    padding: 20px 30px;
+    width: 43%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .top-a-propos {
+    margin: 10px auto;
+    padding: 20px 0px 0px 0px;
+    width: 90%;
+  }
+  .top-a-propos .arrow-left {
+    position: absolute;
+    top: 64px;
+    left: 80px;
+  }
+  .top-a-propos .cadre {
+    position: absolute;
+    top: 25%;
+  }
+  .top-a-propos .features__img {
+    margin: 0 auto;
+    width: 95%;
+    height: 350px;
+  }
+  .top-a-propos .features__img2 {
+    margin: 0 auto;
+    width: 95%;
+    height: 550px;
+  }
+  .top-a-propos .form-contact {
+    padding: 20px 5px;
+    width: 55%;
+    margin: 50px auto 100px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .top-a-propos .arrow-left {
+    position: absolute;
+    top: 64px;
+    left: 60px;
+  }
+  .title-a-propos {
+    font-size: 55px;
+  }
+  .cadre {
+    position: absolute;
+    top: 24%;
   }
 }
 

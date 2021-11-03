@@ -120,8 +120,11 @@
 }
 @media screen and (max-width: 580px) {
   .titre-principal {
-    height: 475px;
-    background-position: bottom;
+    height: 485px;
+
+    .titre-logos {
+      padding: 9px;
+    }
 
     h1 {
       font-size: 40px;
@@ -152,7 +155,7 @@
 @media screen and (max-width: 500px) {
   .titre-principal {
     .titre-logos {
-      padding: 10px 0 50px 0px;
+      padding: 21px;
     }
 
     h1 {

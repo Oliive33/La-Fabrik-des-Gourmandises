@@ -45,6 +45,11 @@
   }
 }
 @media screen and (max-width: 1024px) {
+  .container-global {
+    .activite {
+      width: 70%;
+    }
+  }
   .traiteur {
     margin: 50px 0px 80px 0px;
 
@@ -88,6 +93,15 @@
       margin: 20px;
     }
   }
+  .container-global {
+    .activite {
+      width: 75%;
+      .titre-activite {
+        font-size: 35px;
+      }
+    }
+  }
+
   .txt-par1,
   .txt-par2 {
     font-size: 22px;
@@ -171,6 +185,16 @@
 
     h2 {
       margin: 40px auto 10px;
+    }
+  }
+  .container-global {
+    .activite {
+      width: 90%;
+      margin: 20px auto 50px;
+
+      .titre-activite {
+        font-size: 30px;
+      }
     }
   }
   .items-traiteur {

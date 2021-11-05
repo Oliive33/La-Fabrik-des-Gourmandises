@@ -19,6 +19,44 @@ body {
   background-position: center;
   padding: 0.5rem 0.1rem 0 0.1rem;
 }
+/* --------------------loader-------------------- */
+.animate {
+  text-align: center;
+  animation: load 1s infinite ease alternate;
+}
+@keyframes load {
+  60% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+.loader {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../../ressources/images/background-loader.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader.hidden {
+  animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 /* --------------------header-------------------- */
 
 .header {
@@ -26,9 +64,11 @@ body {
 }
 
 .titre-principal {
-  background: url(../ressources/images/background.webp) no-repeat bottom;
-  background-size: cover;
+  background: url(../ressources/images/background.webp) no-repeat;
+  background-position: 33% 42%;
+  // background-size: cover;
   border: 5px solid $color-primary;
+  border-radius: 4px;
   text-shadow: $shadow-text;
 
   .titre-logos {
@@ -82,7 +122,24 @@ body {
 }
 /* --------------------Section Traiteur-------------------- */
 .container-global {
-  padding: 50px 0px 0px 0px;
+  // padding: 50px 0px 0px 0px;
+
+  .activite {
+    margin: 90px auto 90px;
+    border: none;
+    background: $color-secondary;
+    border: 5px solid $color-primary;
+    border-radius: 4px;
+    width: 60%;
+    opacity: 0.9;
+    padding: 20px;
+    text-align: center;
+
+    .titre-activite {
+      font-size: 45px;
+      font-weight: bolder;
+    }
+  }
 }
 .traiteur {
   margin: 50px 0px 100px 0px;
@@ -115,7 +172,7 @@ body {
 
 .slideshow-item img {
   width: 500px;
-  height: 275px;
+  height: 315px;
   object-fit: cover;
   animation: zoom 31s infinite;
   border-radius: 5px;

@@ -281,8 +281,8 @@ body {
     text-align: center;
     margin: 100px auto 100px;
     background: url(../ressources/images/background.webp) no-repeat;
-    background-position: 11% 15%;
-    background-size: cover;
+    background-position: 11% 40%;
+    // background-size: cover;
     border: 8px solid $color-primary;
     width: 80%;
     border-radius: 5px;
@@ -290,7 +290,7 @@ body {
 
     .title-origin-photos {
       font-size: 55px;
-      padding: 15px;
+      padding-top: 5px;
     }
 
     p {
@@ -298,6 +298,16 @@ body {
       width: 70%;
       line-height: 1.8;
       text-shadow: $shadow-text;
+
+      a {
+        font-weight: 600;
+        text-decoration: none;
+        color: #000;
+        transition: all 0.3s ease-in-out;
+      }
+      a:hover {
+        color: #3b3b3b;
+      }
     }
 
     span {

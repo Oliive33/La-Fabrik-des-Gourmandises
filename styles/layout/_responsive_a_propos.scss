@@ -1,10 +1,4 @@
 @media screen and (max-width: 1200px) {
-  .cadre {
-    position: absolute;
-    top: 27%;
-    left: 50%;
-  }
-
   .header__img {
     transform: translateY(0);
     margin-top: 5rem;
@@ -36,11 +30,6 @@
   }
 }
 @media screen and (max-width: 1024px) {
-  .cadre {
-    position: absolute;
-    top: 30%;
-  }
-
   .features {
     margin: 0;
   }
@@ -67,18 +56,6 @@
       left: 80px;
     }
   }
-  .cadre {
-    position: absolute;
-    top: 28%;
-  }
-  .carousel .changeHidden {
-    width: 30rem;
-  }
-
-  .carousel .changeHidden .element {
-    font-size: 25px;
-  }
-
   .features__img {
     width: 95%;
     height: 380px;
@@ -107,13 +84,6 @@
     }
   }
 
-  .cadre {
-    position: absolute;
-    top: 24%;
-  }
-  .carousel .changeHidden {
-    width: 21rem;
-  }
   .section {
     padding: 1rem 1rem;
   }
@@ -140,24 +110,8 @@
       left: 30px;
     }
   }
-  .cadre {
-    position: absolute;
-    top: 27%;
-  }
-  .carousel .changeHidden {
-    width: 18rem;
-  }
 }
 @media screen and (max-width: 405px) {
-  .phraseSlide {
-    height: auto;
-    width: 100%;
-  }
-
-  .carousel .changeHidden .element {
-    font-size: 22px;
-  }
-
   .features__img {
     width: 100%;
     height: 260px;

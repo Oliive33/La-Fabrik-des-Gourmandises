@@ -50,72 +50,7 @@ html {
     margin: 0 auto 15px;
   }
 }
-/* --------------------slide Phrases-------------------- */
-.phraseSlide {
-  height: 170px;
-  width: 100%;
-}
-.cadre {
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  color: white;
-}
-// .centre {
-//   position: absolute;
-//   top: 50%;
-//   left: 0;
-//   right: 0;
-//   margin-top: -2.25rem;
-// }
-.carousel {
-  position: relative;
-  width: 100%;
-  height: 4.5rem;
-  text-align: center;
-  line-height: 45px;
-}
-.carousel .changeHidden {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: auto;
-  height: 13rem;
-  line-height: 13rem;
-  width: 40rem;
-  overflow: hidden;
-}
-.carousel .changeHidden .contenant {
-  position: relative;
-  animation: carousel 12s ease-in-out infinite;
-}
 
-.carousel .changeHidden .element {
-  font-weight: 700;
-  font-size: 35px;
-}
-// @keyframes carousel {
-//   0%,
-//   20% {
-//     transform: translateY(0);
-//   }
-//   25%,
-//   45% {
-//     transform: translateY(-13rem);
-//   }
-//   50%,
-//   70% {
-//     transform: translateY(-26rem);
-//   }
-//   75%,
-//   95% {
-//     transform: translateY(-39rem);
-//   }
-//   100% {
-//     transform: translateY(-52rem);
-//   }
-// }
 /* --------------------Main-------------------- */
 .section {
   border-bottom: 1px dashed #000;

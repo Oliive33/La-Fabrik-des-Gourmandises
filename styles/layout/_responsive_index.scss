@@ -61,9 +61,11 @@
   .txt-patisserie {
     font-size: 18px;
   }
-  .parallax-patisserie,
   .parallax-traiteur {
     flex-wrap: wrap;
+  }
+  .carousel .changeHidden .element {
+    font-size: 35px;
   }
 
   .txt-par1,
@@ -101,11 +103,12 @@
       }
     }
   }
-
-  .txt-par1,
-  .txt-par2 {
+  .txt-par1 {
     font-size: 22px;
     margin: 0 65px;
+  }
+  .carousel .changeHidden .element {
+    font-size: 26px;
   }
   /* --------------------Responsive Style Section Adresse & Map-------------------- */
   .localisation {
@@ -160,16 +163,19 @@
       margin: 15px;
     }
   }
-  .txt-par1,
-  .txt-par2 {
+  .txt-par1 {
     font-size: 20px;
     margin: 0 65px;
   }
 }
 @media screen and (max-width: 500px) {
-  .animate {
-    width: 150px;
-    height: 150px;
+  .loader {
+    background-position: 53% 80%;
+
+    .animate {
+      width: 150px;
+      height: 150px;
+    }
   }
 
   .titre-principal {
@@ -216,11 +222,10 @@
     height: 320px;
   }
   .parallax-patisserie {
-    height: 425px;
+    margin-bottom: 50px;
+    background-position: center;
   }
-  .txt-par1,
-  .txt-par2 {
-    font-size: 20px;
+  .txt-par1 {
     margin: 0 50px;
   }
 

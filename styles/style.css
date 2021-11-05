@@ -40,6 +40,8 @@ body {
   text-align: center;
   -webkit-animation: load 1s infinite ease alternate;
           animation: load 1s infinite ease alternate;
+  width: 300px;
+  height: 300px;
 }
 
 @-webkit-keyframes load {
@@ -72,6 +74,7 @@ body {
   width: 100%;
   height: 100%;
   background: url(../ressources/images/background-loader.jpg);
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -353,24 +356,6 @@ body {
   text-align: center;
 }
 
-.parallax-patisserie {
-  background: url(../ressources/images/parallax.webp) no-repeat top/cover fixed;
-  opacity: 0.6;
-  width: 100%;
-  height: 250px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-top: 1px dashed #333;
-  border-bottom: 1px dashed #333;
-}
-
 .txt-par2 {
   font-size: 25px;
   font-weight: bolder;
@@ -378,6 +363,122 @@ body {
   text-align: center;
   color: #000000;
   text-shadow: 0px 3px 5px rgba(121, 121, 121, 0.6);
+}
+
+.parallax-patisserie {
+  height: 280px;
+  width: 100%;
+  border-top: 1px dashed #d1ae3b;
+  background: url(../ressources/images/parallax.webp) no-repeat right/cover fixed;
+  opacity: 0.8;
+  position: relative;
+}
+
+.cadre {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 280px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 2px;
+  background: rgba(55, 55, 55, 0.3);
+  color: white;
+}
+
+.centre {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-top: -2.25rem;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 4.5rem;
+  text-align: center;
+  line-height: 45px;
+}
+
+.carousel .changeHidden {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin: auto;
+  height: 13rem;
+  line-height: 13rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel .changeHidden .contenant {
+  position: relative;
+  -webkit-animation: carousel 8s ease-in-out infinite;
+          animation: carousel 8s ease-in-out infinite;
+}
+
+.carousel .changeHidden .element {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+@-webkit-keyframes carousel {
+  0%,
+  20% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25%,
+  45% {
+    -webkit-transform: translateY(-13rem);
+            transform: translateY(-13rem);
+  }
+  50%,
+  70% {
+    -webkit-transform: translateY(-26rem);
+            transform: translateY(-26rem);
+  }
+  75%,
+  95% {
+    -webkit-transform: translateY(-39rem);
+            transform: translateY(-39rem);
+  }
+  100% {
+    -webkit-transform: translateY(-52rem);
+            transform: translateY(-52rem);
+  }
+}
+
+@keyframes carousel {
+  0%,
+  20% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25%,
+  45% {
+    -webkit-transform: translateY(-13rem);
+            transform: translateY(-13rem);
+  }
+  50%,
+  70% {
+    -webkit-transform: translateY(-26rem);
+            transform: translateY(-26rem);
+  }
+  75%,
+  95% {
+    -webkit-transform: translateY(-39rem);
+            transform: translateY(-39rem);
+  }
+  100% {
+    -webkit-transform: translateY(-52rem);
+            transform: translateY(-52rem);
+  }
 }
 
 /* --------------------Section Pâtisserie-------------------- */
@@ -948,51 +1049,6 @@ html {
   margin: 0 auto 15px;
 }
 
-/* --------------------slide Phrases-------------------- */
-.phraseSlide {
-  height: 170px;
-  width: 100%;
-}
-
-.cadre {
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  color: white;
-}
-
-.carousel {
-  position: relative;
-  width: 100%;
-  height: 4.5rem;
-  text-align: center;
-  line-height: 45px;
-}
-
-.carousel .changeHidden {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  margin: auto;
-  height: 13rem;
-  line-height: 13rem;
-  width: 40rem;
-  overflow: hidden;
-}
-
-.carousel .changeHidden .contenant {
-  position: relative;
-  -webkit-animation: carousel 12s ease-in-out infinite;
-          animation: carousel 12s ease-in-out infinite;
-}
-
-.carousel .changeHidden .element {
-  font-weight: 700;
-  font-size: 35px;
-}
-
 /* --------------------Main-------------------- */
 .section {
   border-bottom: 1px dashed #000;
@@ -1235,10 +1291,12 @@ html {
   .txt-patisserie {
     font-size: 18px;
   }
-  .parallax-patisserie,
   .parallax-traiteur {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .carousel .changeHidden .element {
+    font-size: 35px;
   }
   .txt-par1,
   .txt-par2 {
@@ -1274,10 +1332,12 @@ html {
   .container-global .activite .titre-activite {
     font-size: 35px;
   }
-  .txt-par1,
-  .txt-par2 {
+  .txt-par1 {
     font-size: 22px;
     margin: 0 65px;
+  }
+  .carousel .changeHidden .element {
+    font-size: 26px;
   }
   /* --------------------Responsive Style Section Adresse & Map-------------------- */
   .localisation {
@@ -1330,15 +1390,17 @@ html {
   .nav-links li {
     margin: 15px;
   }
-  .txt-par1,
-  .txt-par2 {
+  .txt-par1 {
     font-size: 20px;
     margin: 0 65px;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .animate {
+  .loader {
+    background-position: 53% 80%;
+  }
+  .loader .animate {
     width: 150px;
     height: 150px;
   }
@@ -1378,11 +1440,10 @@ html {
     height: 320px;
   }
   .parallax-patisserie {
-    height: 425px;
+    margin-bottom: 50px;
+    background-position: center;
   }
-  .txt-par1,
-  .txt-par2 {
-    font-size: 20px;
+  .txt-par1 {
     margin: 0 50px;
   }
   .patisserie h2 {
@@ -1563,11 +1624,6 @@ html {
 }
 
 @media screen and (max-width: 1200px) {
-  .cadre {
-    position: absolute;
-    top: 27%;
-    left: 50%;
-  }
   .header__img {
     -webkit-transform: translateY(0);
             transform: translateY(0);
@@ -1604,10 +1660,6 @@ html {
 }
 
 @media screen and (max-width: 1024px) {
-  .cadre {
-    position: absolute;
-    top: 30%;
-  }
   .features {
     margin: 0;
   }
@@ -1631,16 +1683,6 @@ html {
     position: absolute;
     top: 64px;
     left: 80px;
-  }
-  .cadre {
-    position: absolute;
-    top: 28%;
-  }
-  .carousel .changeHidden {
-    width: 30rem;
-  }
-  .carousel .changeHidden .element {
-    font-size: 25px;
   }
   .features__img {
     width: 95%;
@@ -1666,13 +1708,6 @@ html {
   .top-a-propos .title-a-propos {
     font-size: 55px;
   }
-  .cadre {
-    position: absolute;
-    top: 24%;
-  }
-  .carousel .changeHidden {
-    width: 21rem;
-  }
   .section {
     padding: 1rem 1rem;
   }
@@ -1696,23 +1731,9 @@ html {
     top: 64px;
     left: 30px;
   }
-  .cadre {
-    position: absolute;
-    top: 27%;
-  }
-  .carousel .changeHidden {
-    width: 18rem;
-  }
 }
 
 @media screen and (max-width: 405px) {
-  .phraseSlide {
-    height: auto;
-    width: 100%;
-  }
-  .carousel .changeHidden .element {
-    font-size: 22px;
-  }
   .features__img {
     width: 100%;
     height: 260px;

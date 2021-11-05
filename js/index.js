@@ -60,7 +60,7 @@ function load() {
   window.addEventListener("load", () => {
     setTimeout(() => {
       loader.className += " hidden";
-    }, 2500);
+    }, 1300);
   });
 }
 load();

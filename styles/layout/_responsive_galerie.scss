@@ -6,23 +6,13 @@
   }
 
   .container {
-    .photos-container {
-      margin: 30px 0 30px 0;
-    }
-
-    .grille-traiteur,
-    .grille-patisserie {
-      width: 100%;
-      display: grid;
-      grid-template-columns: repeat(auto-fill, 305px);
-    }
-    .grid-item {
-      height: 180px;
-      margin: 15px 15px;
-    }
-    .grid-item img {
-      height: 180px;
-    }
+    // .grid-item {
+    //   height: 180px;
+    //   margin: 15px 15px;
+    // }
+    // .grid-item img {
+    //   height: 180px;
+    // }
     .text {
       padding: 25px;
     }
@@ -58,11 +48,9 @@
   }
 
   .container {
-    .grille-traiteur,
-    .grille-patisserie {
+    .grille-traiteur {
       width: 100%;
-      display: grid;
-      grid-template-columns: repeat(auto-fill, 250px);
+      grid-template-columns: 1fr 1fr;
     }
 
     .txt-photos {
@@ -91,16 +79,8 @@
   }
   .container {
     .photos-container {
-      margin: 30px;
-      border-radius: 5px;
-      padding: 10px;
-    }
-
-    .grille-traiteur,
-    .grille-patisserie {
-      width: 100%;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      margin: 50px auto;
+      width: 85%;
     }
 
     .btn-fermer-slider {
@@ -157,17 +137,13 @@
   }
 
   .container {
-    .grille-traiteur,
-    .grille-patisserie {
+    .grille-traiteur {
       width: 100%;
       display: grid;
-      grid-template-columns: repeat(auto-fill, 290px);
+      grid-template-columns: 1fr;
     }
     .grid-item {
       margin: 29px 20px;
-    }
-    .grid-item img {
-      width: 95%;
     }
   }
 }
@@ -180,24 +156,16 @@
     }
   }
   .container {
-    .photos-container {
-      margin: 10px;
-    }
-
-    .grille-traiteur,
-    .grille-patisserie {
-      width: 100%;
-      display: grid;
-      grid-template-columns: repeat(auto-fill, 423px);
-    }
     .grid-item {
       margin: 10px 60px;
     }
     .txt-photos {
+      background-position: 34% 29%;
+
       .title-origin-photos {
         font-size: 40px;
         margin-top: 10px;
-        padding: 31px;
+        padding: 21px;
       }
       p {
         margin: 20px auto 40px;

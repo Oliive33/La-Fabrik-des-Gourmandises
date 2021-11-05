@@ -167,6 +167,11 @@
   }
 }
 @media screen and (max-width: 500px) {
+  .animate {
+    width: 150px;
+    height: 150px;
+  }
+
   .titre-principal {
     .titre-logos {
       padding: 21px;

@@ -46,7 +46,7 @@ const sr = ScrollReveal({
   // reset: true
 });
 
-sr.reveal(`.titre-principal, .nav-links,.activite, .titre-activite, .traiteur`);
+sr.reveal(`.titre-principal, .nav-links,.activite, .traiteur`);
 sr.reveal(`.patisserie, .localisation .about`, {
   interval: 200,
 });

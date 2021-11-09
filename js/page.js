@@ -52,3 +52,19 @@ leftPorfolio.addEventListener("click", () => {
 fermerSlide.addEventListener("click", () => {
   sliderPortfolio.style.display = "none";
 });
+/*=============== SCROLL REVEAL ANIMATION Galerie ===============*/
+const src = ScrollReveal({
+  origin: "top",
+  distance: "80px",
+  duration: 2500,
+  delay: 1000,
+  // reset: true
+});
+
+src.reveal(`.arrow-left, .title-galerie, .titles-galerie-secondary`);
+src.reveal(
+  `.item1, .item2, .item3 ,.item4, .item5, .item6, .txt-photos, .adresse-logo, .logo, .reseaux`,
+  {
+    interval: 200,
+  }
+);

@@ -63,6 +63,21 @@
       left: 80px;
     }
   }
+  .presentation {
+    margin: 80px auto;
+    text-align: center;
+    width: 90%;
+
+    h3 {
+      margin-bottom: 15px;
+      font-size: 27px;
+    }
+    p {
+      font-size: 20px;
+      padding: 25px;
+      line-height: 1.6;
+    }
+  }
   .features__img {
     width: 95%;
     height: 380px;
@@ -91,6 +106,20 @@
     }
     .title-a-propos {
       font-size: 55px;
+    }
+  }
+  .presentation {
+    margin: 40px auto;
+    text-align: center;
+    width: 95%;
+
+    h3 {
+      margin-bottom: 10px;
+      font-size: 25px;
+    }
+    p {
+      font-size: 18px;
+      padding: 0px;
     }
   }
 

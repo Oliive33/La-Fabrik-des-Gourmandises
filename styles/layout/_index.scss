@@ -133,14 +133,19 @@ body {
     background: $color-secondary;
     border: 5px solid $color-primary;
     border-radius: 4px;
-    width: 60%;
-    opacity: 0.9;
+    width: 80%;
     padding: 20px;
     text-align: center;
 
     .titre-activite {
       font-size: 45px;
       font-weight: bolder;
+      margin: 10px;
+    }
+    .reservations {
+      font-family: $font-title;
+      font-weight: 600;
+      font-size: 40px;
     }
   }
 }
@@ -159,6 +164,13 @@ body {
     @include txt-items;
     margin-left: 50px;
   }
+  .txt-traiteur strong {
+    font-weight: bold;
+    color: #000;
+  }
+  .txt-traiteur a {
+    @include txt-links;
+  }
 }
 .slideshow {
   width: 100%;
@@ -175,7 +187,7 @@ body {
 
 .slideshow-item img {
   width: 500px;
-  height: 315px;
+  height: 335px;
   object-fit: cover;
   animation: zoom 31s infinite;
   border-radius: 5px;
@@ -221,12 +233,6 @@ body {
   margin: 0 80px;
   text-align: center;
 }
-// .parallax-patisserie {
-//   background: url(../ressources/images/parallax.webp) no-repeat top / cover
-//     fixed;
-//   opacity: 0.6;
-//   @include parallax;
-// }
 .txt-par2 {
   font-size: 25px;
   font-weight: bolder;
@@ -326,6 +332,13 @@ body {
   .txt-patisserie {
     @include txt-items;
     margin-right: 70px;
+  }
+  .txt-patisserie strong {
+    font-weight: bold;
+    color: #000;
+  }
+  .txt-patisserie a {
+    @include txt-links;
   }
 }
 /* --------------------Section Adresse & Map-------------------- */

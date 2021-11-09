@@ -97,9 +97,12 @@
   }
   .container-global {
     .activite {
-      width: 75%;
+      width: 85%;
       .titre-activite {
         font-size: 35px;
+      }
+      .reservations {
+        font-size: 31px;
       }
     }
   }
@@ -163,6 +166,19 @@
       margin: 15px;
     }
   }
+  .container-global {
+    .activite {
+      width: 90%;
+
+      .titre-activite {
+        font-size: 30px;
+      }
+      .reservations {
+        font-size: 21px;
+      }
+    }
+  }
+
   .txt-par1 {
     font-size: 20px;
     margin: 0 65px;
@@ -200,7 +216,6 @@
   }
   .container-global {
     .activite {
-      width: 90%;
       margin: 20px auto 50px;
 
       .titre-activite {
@@ -213,6 +228,7 @@
 
     .txt-traiteur {
       width: 91%;
+      font-size: 15px;
     }
   }
   .slideshow img {
@@ -239,6 +255,7 @@
 
     .txt-patisserie {
       width: 92%;
+      font-size: 15px;
     }
   }
   .localisation {

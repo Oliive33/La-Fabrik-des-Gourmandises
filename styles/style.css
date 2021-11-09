@@ -200,8 +200,7 @@ body {
   background: #b3906b;
   border: 5px solid #919090;
   border-radius: 4px;
-  width: 60%;
-  opacity: 0.9;
+  width: 80%;
   padding: 20px;
   text-align: center;
 }
@@ -209,6 +208,13 @@ body {
 .container-global .activite .titre-activite {
   font-size: 45px;
   font-weight: bolder;
+  margin: 10px;
+}
+
+.container-global .activite .reservations {
+  font-family: "Italianno", cursive;
+  font-weight: 600;
+  font-size: 40px;
 }
 
 .traiteur {
@@ -242,15 +248,25 @@ body {
   width: 100%;
   background: #b3906b;
   border: 4px solid #919090;
-  opacity: 0.9;
   color: #333;
-  padding: 10px 9px;
+  padding: 5px 16px;
   border-radius: 3px;
-  height: 315px;
+  height: 335px;
   text-align: left;
   font-size: 16px;
   line-height: 1.7;
   margin-left: 50px;
+}
+
+.items-traiteur .txt-traiteur strong {
+  font-weight: bold;
+  color: #000;
+}
+
+.items-traiteur .txt-traiteur a {
+  font-weight: bolder;
+  text-decoration: none;
+  color: #000;
 }
 
 .slideshow {
@@ -270,7 +286,7 @@ body {
 
 .slideshow-item img {
   width: 500px;
-  height: 315px;
+  height: 335px;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-animation: zoom 31s infinite;
@@ -513,15 +529,25 @@ body {
   width: 100%;
   background: #b3906b;
   border: 4px solid #919090;
-  opacity: 0.9;
   color: #333;
-  padding: 10px 9px;
+  padding: 5px 16px;
   border-radius: 3px;
-  height: 315px;
+  height: 335px;
   text-align: left;
   font-size: 16px;
   line-height: 1.7;
   margin-right: 70px;
+}
+
+.items-patisserie .txt-patisserie strong {
+  font-weight: bold;
+  color: #000;
+}
+
+.items-patisserie .txt-patisserie a {
+  font-weight: bolder;
+  text-decoration: none;
+  color: #000;
 }
 
 /* --------------------Section Adresse & Map-------------------- */
@@ -1012,6 +1038,16 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  padding: 0.5rem 0.1rem 0 0.1rem;
+  background: -webkit-gradient(linear, left top, right top, from(#535153), color-stop(80%, #363636));
+  background: linear-gradient(90deg, #535153 0%, #363636 80%);
+}
+
 /* --------------------header à propos-------------------- */
 .top-a-propos {
   background: url(../ressources/images/background.webp) no-repeat bottom;
@@ -1073,8 +1109,8 @@ html {
 
 /* --------------------Main-------------------- */
 .section {
-  border-bottom: 1px dashed #000;
-  margin: 2rem 0 5rem 0;
+  border-bottom: 1px dashed #919090;
+  margin: 2rem 0 4rem 0;
   padding: 4rem;
 }
 
@@ -1115,14 +1151,25 @@ html {
   font-size: 1.4rem;
   background: url(../ressources/images/background.webp) no-repeat center fixed;
   border: 5px solid #919090;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .features__feature p {
-  font-size: 21px;
-  line-height: 1.3;
+  font-size: 20px;
+  line-height: 1.5;
   position: relative;
   padding: 10px;
+  text-shadow: -4px -1px 7px rgba(57, 57, 57, 0.45);
+}
+
+.features__feature p strong {
+  font-weight: bold;
+}
+
+.features__feature p a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bolder;
 }
 
 .features__titles {
@@ -1144,21 +1191,37 @@ html {
   margin: 7px 0px 0px 8px;
 }
 
-.formulaire {
-  margin: 50px auto 150px;
-  padding: 15px 25px;
+.section-form {
+  background: url(../ressources/images/background.webp) no-repeat bottom/cover fixed;
+  border: 7px solid #919090;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.section-form .form-title {
+  font-family: "Italianno", cursive;
+  text-align: center;
+  font-weight: 700;
+  font-size: 60px;
+}
+
+.section-form .formulaire {
+  margin: 25px auto 25px;
+  padding: 17px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 34%;
-  background: #645338;
-  border-radius: 9999px;
-  border: 5px solid #919090;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(50%, #b3906b), to(#645338));
-  background-image: linear-gradient(to right, transparent 50%, #b3906b 50%, #645338);
+  width: 39%;
+  overflow: hidden;
+  border: 2px solid #333;
+  -webkit-box-shadow: 1px 7px 8px 0px rgba(33, 33, 33, 0.75);
+          box-shadow: 1px 7px 8px 0px rgba(33, 33, 33, 0.75);
+  border-radius: 3px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#b3906b));
+  background-image: linear-gradient(to right, #b3906b);
   background-size: 200%;
   color: #000;
   cursor: pointer;
@@ -1166,23 +1229,25 @@ html {
   transition: all 0.5s ease-in-out;
 }
 
-.formulaire .form-contact {
-  overflow: hidden;
-}
-
-.formulaire .form-link {
-  font-family: "Italianno", cursive;
-  font-size: 45px;
-  color: #000;
+.section-form .formulaire .form-link {
+  font-size: 27px;
+  color: #1f1e1e;
   font-weight: 600;
   text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-.formulaire:hover {
+.section-form .formulaire:hover {
   background-position: 100%;
-  color: #645338;
+  color: #635644;
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
+}
+
+.section-form .form-link:hover {
+  color: #000;
+  font-weight: bolder;
 }
 
 /* --------------------Footer galerie photos-------------------- */
@@ -1368,10 +1433,13 @@ html {
     margin: 20px;
   }
   .container-global .activite {
-    width: 75%;
+    width: 85%;
   }
   .container-global .activite .titre-activite {
     font-size: 35px;
+  }
+  .container-global .activite .reservations {
+    font-size: 31px;
   }
   .txt-par1 {
     font-size: 22px;
@@ -1431,6 +1499,15 @@ html {
   .nav-links li {
     margin: 15px;
   }
+  .container-global .activite {
+    width: 90%;
+  }
+  .container-global .activite .titre-activite {
+    font-size: 30px;
+  }
+  .container-global .activite .reservations {
+    font-size: 21px;
+  }
   .txt-par1 {
     font-size: 20px;
     margin: 0 65px;
@@ -1462,7 +1539,6 @@ html {
     margin: 40px auto 10px;
   }
   .container-global .activite {
-    width: 90%;
     margin: 20px auto 50px;
   }
   .container-global .activite .titre-activite {
@@ -1473,6 +1549,7 @@ html {
   }
   .items-traiteur .txt-traiteur {
     width: 91%;
+    font-size: 15px;
   }
   .slideshow img {
     width: 85%;
@@ -1495,6 +1572,7 @@ html {
   }
   .items-patisserie .txt-patisserie {
     width: 92%;
+    font-size: 15px;
   }
   .localisation {
     margin: 0 auto 0;
@@ -1695,8 +1773,8 @@ html {
     width: 90%;
     height: 760px;
   }
-  .form-contact {
-    width: 35%;
+  .formulaire {
+    width: 41%;
   }
 }
 
@@ -1708,9 +1786,15 @@ html {
   .features__img2 {
     margin: 0 auto;
   }
-  .form-contact {
+  .section-form {
+    width: 70%;
+  }
+  .section-form .formulaire {
     padding: 20px 30px;
-    width: 45%;
+    width: 47%;
+  }
+  .section-form .formulaire .form-link {
+    font-size: 24px;
   }
 }
 
@@ -1733,10 +1817,12 @@ html {
     width: 95%;
     height: 605px;
   }
-  .form-contact {
+  .section-form .form-title {
+    font-size: 50px;
+  }
+  .section-form .formulaire {
     padding: 20px 5px;
     width: 65%;
-    margin: 50px auto 100px;
   }
 }
 
@@ -1760,8 +1846,8 @@ html {
     width: 95%;
     height: 505px;
   }
-  .form-contact {
-    width: 95%;
+  .section-form .formulaire {
+    width: 80%;
     margin: 40px auto 45px;
   }
 }
@@ -1771,6 +1857,19 @@ html {
     position: absolute;
     top: 64px;
     left: 30px;
+  }
+  .section-form {
+    width: 90%;
+  }
+  .section-form .form-title {
+    font-size: 45px;
+    padding: 7px;
+  }
+  .section-form .formulaire {
+    margin: 30px auto 30px;
+  }
+  .section-form .formulaire .form-link {
+    font-size: 23px;
   }
 }
 

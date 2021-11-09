@@ -42,16 +42,14 @@ const sr = ScrollReveal({
   origin: "top",
   distance: "80px",
   duration: 2500,
-  delay: 2000,
+  delay: 1800,
   // reset: true
 });
 
 sr.reveal(`.titre-principal, .nav-links,.activite, .titre-activite, .traiteur`);
-sr.reveal(`.patisserie, .localisation, .about`, {
+sr.reveal(`.patisserie, .localisation .about`, {
   interval: 200,
 });
-// sr.reveal(`.txt-traiteur, .parallax-traiteur`, { origin: "left" });
-// sr.reveal(`.txt-patisserie, .parallax-patisserie`, { origin: "right" });
 
 // =================Loader====================//
 const loader = document.querySelector(".loader");

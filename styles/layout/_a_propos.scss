@@ -50,6 +50,26 @@ html {
     margin: 0 auto 15px;
   }
 }
+/* --------------------Présentation-------------------- */
+.presentation {
+  margin: 100px auto;
+  text-align: center;
+  width: 70%;
+  background: $color-secondary;
+  border: 4px solid $color-primary;
+  padding: 15px 3px;
+  border-radius: 4px;
+
+  h3 {
+    margin-bottom: 20px;
+    font-size: 32px;
+  }
+  p {
+    font-size: 20px;
+    padding: 25px;
+    line-height: 1.7;
+  }
+}
 
 /* --------------------Main-------------------- */
 .section {
@@ -107,20 +127,43 @@ html {
   margin: 7px 0px 0px 8px;
 }
 // ----------------Form Contact----------------//
-.form-contact {
+.formulaire {
   margin: 50px auto 150px;
   padding: 15px 25px;
   display: flex;
   justify-content: center;
-  overflow: hidden;
-  cursor: pointer;
-  border-radius: 9999px;
-  background: $color-secondary;
-  border: 5px solid $color-primary;
-  width: 30%;
+  width: 34%;
+  background: #645338;
 
-  .form-title {
+  .form-contact {
+    overflow: hidden;
+  }
+  border-radius: 9999px;
+  border: 5px solid $color-primary;
+
+  background-image: linear-gradient(
+    to right,
+    transparent 50%,
+    #b3906b 50%,
+    #645338
+  );
+  background-size: 200%;
+  color: #000;
+  // opacity: 0.9;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+
+  .form-link {
     font-family: $font-title;
     font-size: 45px;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    // transition: 0.2s ease-in-out;
   }
+}
+.formulaire:hover {
+  background-position: 100%;
+  color: #645338;
+  transform: scale(0.95);
 }

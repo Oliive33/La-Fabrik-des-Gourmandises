@@ -49,6 +49,9 @@
     .activite {
       width: 70%;
     }
+    .titre-activite {
+      text-align: center;
+    }
   }
   .traiteur {
     margin: 50px 0px 80px 0px;
@@ -76,7 +79,7 @@
 }
 @media screen and (max-width: 768px) {
   .titre-principal {
-    height: 450px;
+    // height: 450px;
     background-position: bottom;
 
     h1 {
@@ -88,22 +91,22 @@
       height: 45px;
     }
   }
-  .nav-links {
-    flex-direction: column;
-
-    li {
-      margin: 20px;
-    }
-  }
   .container-global {
     .activite {
       width: 85%;
       .titre-activite {
         font-size: 35px;
       }
-      .reservations {
-        font-size: 31px;
-      }
+    }
+  }
+  .items-traiteur {
+    .txt-traiteur {
+      padding: 12px 16px;
+    }
+  }
+  .items-patisserie {
+    .txt-patisserie {
+      padding: 13px 17px;
     }
   }
   .txt-par1 {
@@ -138,10 +141,29 @@
     }
   }
 }
+@media screen and (max-width: 700px) {
+  .logo-menu {
+    display: block;
+  }
+  .nav-links {
+    padding-top: 15px;
+    flex-direction: column;
+    height: auto;
+    position: relative;
+    display: none;
+  }
+  .item-nav a {
+    height: 54px;
+    margin: 13px;
+    justify-content: center;
+  }
+  .nav-links.active {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 580px) {
   .titre-principal {
-    height: 485px;
-
     .titre-logos {
       padding: 9px;
     }
@@ -153,29 +175,6 @@
     img {
       width: 40px;
       height: 40px;
-    }
-  }
-  .nav-links {
-    flex-direction: column;
-
-    a {
-      font-size: 21px;
-    }
-
-    li {
-      margin: 15px;
-    }
-  }
-  .container-global {
-    .activite {
-      width: 90%;
-
-      .titre-activite {
-        font-size: 30px;
-      }
-      .reservations {
-        font-size: 21px;
-      }
     }
   }
 
@@ -217,9 +216,11 @@
   .container-global {
     .activite {
       margin: 20px auto 50px;
+      width: 90%;
 
       .titre-activite {
-        font-size: 30px;
+        font-size: 22px;
+        line-height: 1.5;
       }
     }
   }
@@ -227,8 +228,9 @@
     margin: 15px 0 40px 0;
 
     .txt-traiteur {
-      width: 91%;
+      width: 95%;
       font-size: 15px;
+      padding: 15px 15px;
     }
   }
   .slideshow img {
@@ -251,11 +253,12 @@
     }
   }
   .items-patisserie {
-    margin: 20px 0 60px 0;
+    margin: 20px 0 40px 0;
 
     .txt-patisserie {
-      width: 92%;
+      width: 94%;
       font-size: 15px;
+      padding: 15px 15px;
     }
   }
   .localisation {
@@ -281,7 +284,7 @@
   }
   .items-patisserie {
     .txt-patisserie {
-      width: 95%;
+      width: 96%;
       font-size: 17px;
     }
   }

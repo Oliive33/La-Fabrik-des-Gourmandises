@@ -22,6 +22,7 @@ body {
 /* --------------------header-------------------- */
 .top {
   background: url(../ressources/images/background.webp) no-repeat bottom;
+  background-size: cover;
   border: 5px solid $color-primary;
   border-radius: 4px;
   margin: 0 auto;
@@ -212,8 +213,7 @@ body {
     margin: 100px auto 100px;
     background: url(../ressources/images/background.webp) no-repeat;
     background-position: 11% 40%;
-    // background-size: cover;
-    border: 8px solid $color-primary;
+    border: 6px solid $color-primary;
     width: 80%;
     border-radius: 5px;
     padding: 5px;
@@ -221,6 +221,7 @@ body {
     .title-origin-photos {
       font-size: 55px;
       padding-top: 5px;
+      font-family: $font-title;
     }
 
     p {

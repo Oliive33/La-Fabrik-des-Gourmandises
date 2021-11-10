@@ -69,7 +69,6 @@ body {
 .titre-principal {
   background: url(../ressources/images/background.webp) no-repeat;
   background-position: 33% 42%;
-  // background-size: cover;
   border: 5px solid $color-primary;
   border-radius: 4px;
   text-shadow: $shadow-text;
@@ -131,21 +130,18 @@ body {
     margin: 90px auto 90px;
     border: none;
     background: $color-secondary;
-    border: 5px solid $color-primary;
+    border: 3px solid $color-primary;
     border-radius: 4px;
     width: 80%;
     padding: 20px;
     text-align: center;
+    box-shadow: 6px 3px 10px 3px rgba(70, 69, 69, 0.5);
 
     .titre-activite {
       font-size: 45px;
+      font-family: $font-title;
       font-weight: bolder;
       margin: 10px;
-    }
-    .reservations {
-      font-family: $font-title;
-      font-weight: 600;
-      font-size: 40px;
     }
   }
 }
@@ -244,7 +240,7 @@ body {
 .parallax-patisserie {
   height: 280px;
   width: 100%;
-  border-top: 1px dashed rgb(209, 174, 59);
+  border-top: 1px dashed $color-primary;
   background: url(../ressources/images/parallax.webp) no-repeat right / cover
     fixed;
   opacity: 0.8;
@@ -385,13 +381,13 @@ body {
   width: 50%;
   margin: 50px auto;
 }
-h2 {
-  font-family: "Italianno", cursive;
+.title-window {
+  font-family: $font-title;
   font-size: 25px;
   letter-spacing: 2px;
 }
 .txt-window {
-  font-family: "Italianno", cursive;
+  font-family: $font-title;
   display: flex;
   justify-content: center;
   font-weight: 600;
@@ -404,9 +400,6 @@ h2 {
   font-weight: 500;
   font-size: 16px;
 }
-// img {
-//   height: 200px;
-// }
 /* --------------------Footer page1-------------------- */
 .about {
   display: flex;
@@ -462,4 +455,11 @@ footer {
   background: $color-primary;
   padding: 30px 20px;
   text-align: center;
+
+  .link-mentionslegales {
+    color: #333;
+  }
+  .link-mentionslegales:hover {
+    color: #000;
+  }
 }

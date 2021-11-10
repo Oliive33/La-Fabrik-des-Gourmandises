@@ -197,24 +197,21 @@ body {
 .container-global .activite {
   margin: 90px auto 90px;
   border: none;
-  background: #d0af8b;
-  border: 5px solid #919090;
+  background: #e2c19e;
+  border: 3px solid #919090;
   border-radius: 4px;
   width: 80%;
   padding: 20px;
   text-align: center;
+  -webkit-box-shadow: 6px 3px 10px 3px rgba(70, 69, 69, 0.5);
+          box-shadow: 6px 3px 10px 3px rgba(70, 69, 69, 0.5);
 }
 
 .container-global .activite .titre-activite {
   font-size: 45px;
+  font-family: "Italianno", cursive;
   font-weight: bolder;
   margin: 10px;
-}
-
-.container-global .activite .reservations {
-  font-family: "Italianno", cursive;
-  font-weight: 600;
-  font-size: 40px;
 }
 
 .traiteur {
@@ -231,9 +228,9 @@ body {
   width: 90%;
   opacity: 0.9;
   border-radius: 5px;
-  -webkit-box-shadow: 6px 3px 10px 3px rgba(81, 81, 81, 0.75);
-          box-shadow: 6px 3px 10px 3px rgba(81, 81, 81, 0.75);
-  border: 7px solid #919090;
+  -webkit-box-shadow: 6px 3px 10px 3px rgba(81, 81, 81, 0.8);
+          box-shadow: 6px 3px 10px 3px rgba(81, 81, 81, 0.8);
+  border: 4px solid #919090;
 }
 
 .items-traiteur {
@@ -246,11 +243,11 @@ body {
 
 .items-traiteur .txt-traiteur {
   width: 100%;
-  background: #d0af8b;
+  background: #e2c19e;
   border: 2px solid #919090;
   color: #272727;
   padding: 5px 16px;
-  border-radius: 3px;
+  border-radius: 2px;
   height: 335px;
   text-align: left;
   font-size: 16px;
@@ -384,7 +381,7 @@ body {
 .parallax-patisserie {
   height: 280px;
   width: 100%;
-  border-top: 1px dashed #d1ae3b;
+  border-top: 1px dashed #919090;
   background: url(../ressources/images/parallax.webp) no-repeat right/cover fixed;
   opacity: 0.8;
   position: relative;
@@ -512,9 +509,9 @@ body {
   width: 90%;
   opacity: 0.9;
   border-radius: 5px;
-  -webkit-box-shadow: 6px 3px 10px 3px rgba(81, 81, 81, 0.75);
-          box-shadow: 6px 3px 10px 3px rgba(81, 81, 81, 0.75);
-  border: 7px solid #919090;
+  -webkit-box-shadow: 6px 3px 10px 3px rgba(81, 81, 81, 0.8);
+          box-shadow: 6px 3px 10px 3px rgba(81, 81, 81, 0.8);
+  border: 4px solid #919090;
 }
 
 .items-patisserie {
@@ -527,11 +524,11 @@ body {
 
 .items-patisserie .txt-patisserie {
   width: 100%;
-  background: #d0af8b;
+  background: #e2c19e;
   border: 2px solid #919090;
   color: #272727;
   padding: 5px 16px;
-  border-radius: 3px;
+  border-radius: 2px;
   height: 335px;
   text-align: left;
   font-size: 16px;
@@ -555,7 +552,7 @@ body {
   margin: 100px auto 0;
   padding: 10px 5px 40px 5px;
   background: url(../ressources/images/background.webp) no-repeat bottom/cover fixed;
-  border: 7px solid #919090;
+  border: 4px solid #919090;
   width: 50%;
   border-radius: 5px;
   -webkit-box-shadow: 6px 3px 10px 3px rgba(81, 81, 81, 0.75);
@@ -607,7 +604,7 @@ body {
   margin: 50px auto;
 }
 
-h2 {
+.title-window {
   font-family: "Italianno", cursive;
   font-size: 25px;
   letter-spacing: 2px;
@@ -653,7 +650,7 @@ h2 {
   text-decoration: none;
   text-transform: uppercase;
   padding: 10px 35px;
-  background: #d0af8b;
+  background: #e2c19e;
   border-radius: 3px;
   border: 2px solid #77644f;
   color: #333;
@@ -714,6 +711,14 @@ footer {
   text-align: center;
 }
 
+footer .link-mentionslegales {
+  color: #333;
+}
+
+footer .link-mentionslegales:hover {
+  color: #000;
+}
+
 *,
 ::before,
 ::after {
@@ -743,6 +748,7 @@ body {
 /* --------------------header-------------------- */
 .top {
   background: url(../ressources/images/background.webp) no-repeat bottom;
+  background-size: cover;
   border: 5px solid #919090;
   border-radius: 4px;
   margin: 0 auto;
@@ -990,7 +996,7 @@ body {
   margin: 100px auto 100px;
   background: url(../ressources/images/background.webp) no-repeat;
   background-position: 11% 40%;
-  border: 8px solid #919090;
+  border: 6px solid #919090;
   width: 80%;
   border-radius: 5px;
   padding: 5px;
@@ -999,6 +1005,7 @@ body {
 .container .txt-photos .title-origin-photos {
   font-size: 55px;
   padding-top: 5px;
+  font-family: "Italianno", cursive;
 }
 
 .container .txt-photos p {
@@ -1090,7 +1097,7 @@ body {
   margin: 100px auto;
   text-align: center;
   width: 70%;
-  background: #d0af8b;
+  background: #e2c19e;
   border: 4px solid #919090;
   padding: 15px 3px;
   border-radius: 4px;
@@ -1195,7 +1202,7 @@ body {
 
 .section-form {
   background: url(../ressources/images/background.webp) no-repeat bottom/cover fixed;
-  border: 7px solid #919090;
+  border: 4px solid #919090;
   width: 60%;
   margin: 0 auto;
 }
@@ -1222,8 +1229,8 @@ body {
   -webkit-box-shadow: 1px 7px 8px 0px rgba(33, 33, 33, 0.75);
           box-shadow: 1px 7px 8px 0px rgba(33, 33, 33, 0.75);
   border-radius: 3px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#d0af8b));
-  background-image: linear-gradient(to right, #d0af8b);
+  background-image: -webkit-gradient(linear, left top, right top, from(#e2c19e));
+  background-image: linear-gradient(to right, #e2c19e);
   background-size: 200%;
   color: #000;
   cursor: pointer;
@@ -1270,7 +1277,7 @@ body {
 .adress .adresse-logo {
   text-align: center;
   padding: 10px 5px;
-  background: #d0af8b;
+  background: #e2c19e;
   border-radius: 3px;
   line-height: 1.5;
   border: 2px solid #77644f;
@@ -1585,6 +1592,20 @@ body {
   }
   .about {
     margin-top: 70px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .carousel .changeHidden .element {
+    font-size: 21px;
+  }
+  .items-traiteur .txt-traiteur {
+    width: 96%;
+    font-size: 18px;
+  }
+  .items-patisserie .txt-patisserie {
+    width: 95%;
+    font-size: 17px;
   }
 }
 
@@ -1933,7 +1954,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   text-decoration: none;
-  background: #d0af8b;
+  background: #e2c19e;
   border-radius: 100px;
   padding: 0.45rem;
   opacity: 9;

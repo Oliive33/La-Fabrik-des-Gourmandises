@@ -16,14 +16,14 @@
   width: 90%;
   opacity: 0.9;
   border-radius: 5px;
-  box-shadow: 6px 3px 10px 3px rgba(81, 81, 81, 0.75);
-  border: 7px solid $color-primary;
+  box-shadow: 6px 3px 10px 3px rgba(81, 81, 81, 0.8);
+  border: 4px solid $color-primary;
 }
 
 @mixin backgrounds {
   background: url(../ressources/images/background.webp) no-repeat bottom / cover
     fixed;
-  border: 7px solid $color-primary;
+  border: 4px solid $color-primary;
 }
 @mixin galerie-background {
   margin: 100px auto;
@@ -112,7 +112,7 @@
   border: 2px solid $color-primary;
   color: rgb(39, 39, 39);
   padding: 5px 16px;
-  border-radius: 3px;
+  border-radius: 2px;
   height: 335px;
   text-align: left;
   font-size: 16px;

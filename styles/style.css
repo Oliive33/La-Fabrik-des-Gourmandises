@@ -146,8 +146,7 @@ body {
   background-clip: text;
 }
 
-.titre-principal .image-traiteur,
-.titre-principal .image-patisserie {
+.titre-principal .image-head {
   width: 50px;
   height: 50px;
 }
@@ -205,15 +204,6 @@ body {
 .nav-links .item-nav:hover {
   -webkit-transform: translateX(5px);
           transform: translateX(5px);
-}
-
-.logo-menu {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  width: 40px;
-  z-index: 25;
-  display: none;
 }
 
 /* --------------------Section Traiteur-------------------- */
@@ -1094,7 +1084,7 @@ body {
 .top-a-propos {
   background: url(../ressources/images/background.webp) no-repeat bottom;
   background-size: cover;
-  border: 7px solid #919090;
+  border: 5px solid #919090;
   margin: 0 auto;
   padding: 20px 0px 0px 0px;
   width: 70%;
@@ -1200,6 +1190,7 @@ body {
 
 .features__feature p {
   font-size: 20px;
+  width: 100%;
   line-height: 1.5;
   position: relative;
   padding: 10px;
@@ -1459,13 +1450,10 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .titre-principal {
-    background-position: bottom;
-  }
   .titre-principal h1 {
     font-size: 50px;
   }
-  .titre-principal img {
+  .titre-principal .image-head {
     width: 45px;
     height: 45px;
   }
@@ -1544,9 +1532,9 @@ body {
     padding: 9px;
   }
   .titre-principal h1 {
-    font-size: 40px;
+    font-size: 41px;
   }
-  .titre-principal img {
+  .titre-principal .image-head {
     width: 40px;
     height: 40px;
   }
@@ -1565,12 +1553,12 @@ body {
     height: 150px;
   }
   .titre-principal .titre-logos {
-    padding: 21px;
+    padding: 10px;
   }
   .titre-principal h1 {
-    font-size: 35px;
+    font-size: 40px;
   }
-  .titre-principal img {
+  .titre-principal .image-head {
     width: 35px;
     height: 35px;
   }
@@ -1585,7 +1573,7 @@ body {
     width: 90%;
   }
   .container-global .activite .titre-activite {
-    font-size: 22px;
+    font-size: 25px;
     line-height: 1.5;
   }
   .items-traiteur {
@@ -1918,9 +1906,10 @@ body {
     margin-bottom: 10px;
     font-size: 25px;
   }
-  .presentation p {
+  .presentation .txt-presentation {
     font-size: 18px;
     padding: 0px;
+    width: 95%;
   }
   .section {
     padding: 1rem 1rem;

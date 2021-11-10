@@ -79,14 +79,11 @@
 }
 @media screen and (max-width: 768px) {
   .titre-principal {
-    // height: 450px;
-    background-position: bottom;
-
     h1 {
       font-size: 50px;
     }
 
-    img {
+    .image-head {
       width: 45px;
       height: 45px;
     }
@@ -169,10 +166,10 @@
     }
 
     h1 {
-      font-size: 40px;
+      font-size: 41px;
     }
 
-    img {
+    .image-head {
       width: 40px;
       height: 40px;
     }
@@ -195,13 +192,13 @@
 
   .titre-principal {
     .titre-logos {
-      padding: 21px;
+      padding: 10px;
     }
 
     h1 {
-      font-size: 35px;
+      font-size: 40px;
     }
-    img {
+    .image-head {
       width: 35px;
       height: 35px;
     }
@@ -219,7 +216,7 @@
       width: 90%;
 
       .titre-activite {
-        font-size: 22px;
+        font-size: 25px;
         line-height: 1.5;
       }
     }

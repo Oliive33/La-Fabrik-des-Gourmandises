@@ -1516,7 +1516,7 @@ body {
     display: none;
   }
   .item-nav a {
-    height: 54px;
+    height: 42px;
     margin: 13px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1625,11 +1625,11 @@ body {
     font-size: 21px;
   }
   .items-traiteur .txt-traiteur {
-    width: 96%;
-    font-size: 18px;
+    width: 99%;
+    font-size: 16px;
   }
   .items-patisserie .txt-patisserie {
-    width: 96%;
+    width: 99%;
     font-size: 17px;
   }
 }

@@ -46,8 +46,8 @@ const sr = ScrollReveal({
   // reset: true
 });
 
-sr.reveal(`.titre-principal, .nav-links,.activite, .traiteur`);
-sr.reveal(`.patisserie, .localisation .about`, {
+sr.reveal(`.titre-principal,.activite, .traiteur`);
+sr.reveal(`.patisserie, .localisation, .about`, {
   interval: 200,
 });
 
@@ -62,3 +62,18 @@ function load() {
   });
 }
 load();
+
+const btnMenu = document.querySelector(".image-patisserie");
+const menu = document.querySelector(".nav-links");
+
+btnMenu.addEventListener("click", () => {
+  menu.classList.toggle("active");
+});
+
+const allLinks = document.querySelectorAll(".item-nav");
+
+allLinks.forEach((item) => {
+  item.addEventListener("click", () => {
+    menu.classList.remove("active");
+  });
+});

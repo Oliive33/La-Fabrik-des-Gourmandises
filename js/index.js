@@ -16,7 +16,7 @@ function initMap() {
   });
   // infowindow
   const detailWindow = new google.maps.InfoWindow({
-    content: `<h2>La Fabri'K des Gourmandises</h2>
+    content: `<h4 class="title-window">La Fabri'K des Gourmandises</h4>
       <span class="txt-window">Traiteur et Pâtisseries</span>
       <p class="post-code">9 impasse du Petit Pailler
       </p>

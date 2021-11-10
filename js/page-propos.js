@@ -9,7 +9,7 @@ const srv = ScrollReveal({
 
 srv.reveal(`.arrow-left, .title-a-propos, .presentation`);
 srv.reveal(
-  `.vague1,.features__img2, .vague2, .vague3 ,.form-title, .form-contact, .adresse-logo, .logo, .reseaux`,
+  `.vague1,.features__img2, .vague2, .vague3 ,.form-title,.section-form, .logo, .reseaux`,
   {
     interval: 200,
   }

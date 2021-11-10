@@ -63,7 +63,8 @@ function load() {
 }
 load();
 
-const btnMenu = document.querySelector(".image-patisserie");
+// =================Btn Toggle====================//
+const btnMenu = document.querySelector(".titre-logos");
 const menu = document.querySelector(".nav-links");
 
 btnMenu.addEventListener("click", () => {

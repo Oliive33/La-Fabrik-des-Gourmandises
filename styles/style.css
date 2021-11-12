@@ -1661,8 +1661,17 @@ body {
 }
 
 @media screen and (max-width: 400px) {
+  .item-nav a {
+    font-size: 22px;
+  }
   .carousel .changeHidden .element {
     font-size: 21px;
+  }
+  .traiteur h2 {
+    font-size: 44px;
+  }
+  .patisserie h2 {
+    font-size: 45px;
   }
   .items-traiteur .txt-traiteur {
     width: 99%;
@@ -1815,10 +1824,13 @@ body {
     left: 18px;
   }
   .container .photos-container {
-    width: 95%;
+    width: 97%;
   }
   .container .grid-item {
-    margin: 1px 0px;
+    margin: 15px 5px;
+  }
+  .container .text {
+    font-size: 18px;
   }
   .container .txt-photos {
     background-position: 34% 29%;

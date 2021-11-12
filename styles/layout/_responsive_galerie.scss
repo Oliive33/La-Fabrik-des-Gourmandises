@@ -160,12 +160,16 @@
   }
   .container {
     .photos-container {
-      width: 95%;
+      width: 97%;
     }
 
     .grid-item {
-      margin: 1px 0px;
+      margin: 15px 5px;
     }
+    .text {
+      font-size: 18px;
+    }
+
     .txt-photos {
       background-position: 34% 29%;
 

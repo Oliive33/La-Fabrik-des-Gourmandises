@@ -1,6 +1,13 @@
 //-------------------Responsive style index.html--------------------------//
 
 // Section Traiteur et Patisserie
+@media screen and (max-width: 1320px) {
+  .traiteur {
+    .txt-taiteur {
+      line-height: 1.6;
+    }
+  }
+}
 @media screen and (max-width: 1200px) {
   .traiteur {
     h2 {
@@ -267,6 +274,13 @@
   }
   .about {
     margin-top: 70px;
+  }
+  footer {
+    padding: 10px 10px;
+
+    p {
+      width: 94%;
+    }
   }
 }
 @media screen and (max-width: 400px) {

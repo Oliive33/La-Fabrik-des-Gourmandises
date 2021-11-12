@@ -137,13 +137,16 @@
   }
 
   .container {
+    .photos-container {
+      width: 90%;
+    }
     .grille-traiteur {
       width: 100%;
       display: grid;
       grid-template-columns: 1fr;
     }
     .grid-item {
-      margin: 29px 20px;
+      margin: 10px 5px;
     }
   }
 }
@@ -156,8 +159,12 @@
     }
   }
   .container {
+    .photos-container {
+      width: 95%;
+    }
+
     .grid-item {
-      margin: 10px 60px;
+      margin: 1px 0px;
     }
     .txt-photos {
       background-position: 34% 29%;

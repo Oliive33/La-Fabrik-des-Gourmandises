@@ -173,6 +173,7 @@ body {
   .txt-traiteur {
     @include txt-items;
     margin-left: 50px;
+    text-shadow: $shadow-text;
   }
   .txt-traiteur strong {
     font-weight: bold;
@@ -180,6 +181,9 @@ body {
   }
   .txt-traiteur a {
     @include txt-links;
+  }
+  .txt-traiteur a:hover {
+    color: $color-tertiary;
   }
 }
 .slideshow {
@@ -197,7 +201,7 @@ body {
 
 .slideshow-item img {
   width: 500px;
-  height: 335px;
+  height: 345px;
   object-fit: cover;
   animation: zoom 31s infinite;
   border-radius: 5px;
@@ -342,6 +346,7 @@ body {
   .txt-patisserie {
     @include txt-items;
     margin-right: 70px;
+    text-shadow: $shadow-text;
   }
   .txt-patisserie strong {
     font-weight: bold;
@@ -349,6 +354,9 @@ body {
   }
   .txt-patisserie a {
     @include txt-links;
+  }
+  .txt-patisserie a:hover {
+    color: $color-tertiary;
   }
 }
 /* --------------------Section Adresse & Map-------------------- */
@@ -467,13 +475,29 @@ body {
 footer {
   border-top: 1px dashed #333;
   background: $color-primary;
-  padding: 30px 20px;
+  padding: 25px 20px;
   text-align: center;
 
+  p {
+    width: 68%;
+    margin: 10px auto 10px;
+  }
+
   .link-mentionslegales {
-    color: #333;
+    color: $color-tertiary;
+    text-decoration: none;
   }
   .link-mentionslegales:hover {
-    color: #000;
+    color: #333;
+  }
+  .creator {
+    .link-creator {
+      text-decoration: none;
+      color: $color-tertiary;
+      font-size: 16px;
+    }
+    .link-creator:hover {
+      color: #333;
+    }
   }
 }

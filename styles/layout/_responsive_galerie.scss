@@ -140,6 +140,10 @@
     .photos-container {
       width: 90%;
     }
+    .txt-photos {
+      background-position: 11% 30%;
+    }
+
     .grille-traiteur {
       width: 100%;
       display: grid;
@@ -184,7 +188,7 @@
     }
 
     .txt-photos {
-      background-position: 30% 15%;
+      background-position: 6% 3%;
 
       .title-origin-photos {
         font-size: 40px;
@@ -193,7 +197,7 @@
       }
       p {
         margin: 20px auto 15px;
-        width: 80%;
+        width: 95% !important;
         line-height: 1.8;
         text-shadow: $shadow-text;
       }

@@ -112,7 +112,7 @@ body {
 
 .titre-principal {
   background: url(../ressources/images/background.webp) no-repeat;
-  background-position: 33% 42%;
+  background-position: 33% 38%;
   border: 5px solid #919090;
   border-radius: 4px;
   text-shadow: 0px 3px 5px rgba(121, 121, 121, 0.6);
@@ -1818,22 +1818,35 @@ body {
 }
 
 @media screen and (max-width: 400px) {
+  .top {
+    padding: 5px 0 20px 0;
+  }
   .top .arrow-left {
     position: absolute;
     top: 51px;
     left: 18px;
   }
+  .top .title-galerie {
+    font-size: 50px;
+    margin: 0 auto 25px;
+  }
+  .top .titles-galerie1 {
+    margin: 0 15px 28px 10px;
+  }
+  .top .titles-galerie2 {
+    margin: 0 15px 15px 10px;
+  }
   .container .photos-container {
     width: 97%;
   }
   .container .grid-item {
-    margin: 15px 5px;
+    margin: 25px 5px;
   }
   .container .text {
     font-size: 18px;
   }
   .container .txt-photos {
-    background-position: 34% 29%;
+    background-position: 30% 15%;
   }
   .container .txt-photos .title-origin-photos {
     font-size: 40px;
@@ -1841,7 +1854,7 @@ body {
     padding: 21px;
   }
   .container .txt-photos p {
-    margin: 20px auto 40px;
+    margin: 20px auto 15px;
     width: 80%;
     line-height: 1.8;
     text-shadow: 0px 3px 5px rgba(121, 121, 121, 0.6);
@@ -2063,7 +2076,7 @@ body {
 
 @media screen and (max-width: 380px) {
   .show-scroll {
-    bottom: 100px;
+    bottom: 110px;
   }
 }
 /*# sourceMappingURL=style.css.map */

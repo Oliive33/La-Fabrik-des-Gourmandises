@@ -339,9 +339,10 @@ body {
     @include titles-secondary;
   }
 }
-
 .items-patisserie {
-  @include items;
+  display: flex;
+  text-align: center;
+  margin: 50px 0 55px 0;
 
   .txt-patisserie {
     @include txt-items;
@@ -359,6 +360,14 @@ body {
     color: $color-tertiary;
   }
 }
+.horaires {
+  font-size: 17px;
+  color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
 /* --------------------Section Adresse & Map-------------------- */
 .localisation {
   margin: 100px auto 0;

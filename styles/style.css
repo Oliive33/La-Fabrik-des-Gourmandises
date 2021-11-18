@@ -548,8 +548,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 50px 0 100px 0;
   text-align: center;
+  margin: 50px 0 55px 0;
 }
 
 .items-patisserie .txt-patisserie {
@@ -580,6 +580,18 @@ body {
 
 .items-patisserie .txt-patisserie a:hover {
   color: #382d21;
+}
+
+.horaires {
+  font-size: 17px;
+  color: #f1f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
 }
 
 /* --------------------Section Adresse & Map-------------------- */
@@ -1021,12 +1033,14 @@ body {
 
 .container .text {
   color: #3b3b3b;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bolder;
   position: absolute;
   top: 50%;
   left: 50%;
-  padding: 22px;
+  width: 200px;
+  height: 140px;
+  padding: 50px;
   border-radius: 5px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1076,6 +1090,14 @@ body {
 
 .container .txt-photos p a:hover {
   color: #3b3b3b;
+}
+
+.container .txt-photos p strong {
+  color: #000;
+}
+
+.container .txt-photos .link-creation-photos {
+  text-decoration: none;
 }
 
 .container .txt-photos span {
@@ -1442,6 +1464,13 @@ body {
     width: 80%;
     height: auto;
   }
+  .horaires {
+    width: 80%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 50px auto;
+  }
   .slideshow {
     position: revert;
     margin: 50px 0px 130px 0px;
@@ -1586,6 +1615,9 @@ body {
     width: 150px;
     height: 150px;
   }
+  .titre-principal {
+    background-position: 24% 38%;
+  }
   .titre-principal .titre-logos {
     padding: 10px;
   }
@@ -1686,9 +1718,6 @@ body {
 @media screen and (max-width: 1220px) {
   .top .title-galerie {
     margin: 0 auto 40px;
-  }
-  .container .text {
-    padding: 25px;
   }
   .container .txt-photos {
     margin: 80px auto 100px;
@@ -1805,6 +1834,10 @@ body {
   .container .photos-container {
     width: 90%;
   }
+  .container .text {
+    padding: 30px;
+    height: 120px;
+  }
   .container .txt-photos {
     background-position: 11% 30%;
   }
@@ -1816,7 +1849,7 @@ body {
         grid-template-columns: 1fr;
   }
   .container .grid-item {
-    margin: 10px 5px;
+    margin: 25px 10px;
   }
 }
 

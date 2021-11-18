@@ -189,12 +189,14 @@ body {
   }
   .text {
     color: #3b3b3b;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bolder;
     position: absolute;
     top: 50%;
     left: 50%;
-    padding: 22px;
+    width: 200px;
+    height: 140px;
+    padding: 50px;
     border-radius: 5px;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -239,6 +241,13 @@ body {
       a:hover {
         color: #3b3b3b;
       }
+
+      strong {
+        color: #000;
+      }
+    }
+    .link-creation-photos {
+      text-decoration: none;
     }
 
     span {

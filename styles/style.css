@@ -34,6 +34,18 @@ body {
   padding: 0.5rem 0.1rem 0 0.1rem;
 }
 
+/*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background: rgba(234, 190, 176, 0.555);
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(145, 144, 144, 0.877);
+  border-radius: 1rem;
+}
+
 /* --------------------loader-------------------- */
 .animate {
   text-align: center;
@@ -460,8 +472,8 @@ body {
 
 .carousel .changeHidden .contenant {
   position: relative;
-  -webkit-animation: carousel 8s ease-in-out infinite;
-          animation: carousel 8s ease-in-out infinite;
+  -webkit-animation: carousel 18s ease-in-out infinite;
+          animation: carousel 18s ease-in-out infinite;
 }
 
 .carousel .changeHidden .element {
@@ -710,6 +722,7 @@ body {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   background: #7c6a56;
+  border: 2px solid #e7ccaa;
 }
 
 .about h4 {
@@ -1705,12 +1718,16 @@ body {
     font-size: 45px;
   }
   .items-traiteur .txt-traiteur {
-    width: 99%;
-    font-size: 16px;
+    width: 100%;
+    font-size: 17px;
   }
   .items-patisserie .txt-patisserie {
-    width: 99%;
+    width: 100%;
     font-size: 17px;
+  }
+  .parallax-patisserie,
+  .cadre {
+    height: 300px;
   }
 }
 
@@ -1881,7 +1898,7 @@ body {
     font-size: 18px;
   }
   .container .txt-photos {
-    background-position: 19% 18%;
+    background-position: 52% 18%;
   }
   .container .txt-photos .title-origin-photos {
     font-size: 40px;

@@ -306,14 +306,18 @@
   }
   .items-traiteur {
     .txt-traiteur {
-      width: 99%;
-      font-size: 16px;
+      width: 100%;
+      font-size: 17px;
     }
   }
   .items-patisserie {
     .txt-patisserie {
-      width: 99%;
+      width: 100%;
       font-size: 17px;
     }
+  }
+  .parallax-patisserie,
+  .cadre {
+    height: 300px;
   }
 }
